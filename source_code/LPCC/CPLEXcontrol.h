@@ -1,0 +1,96 @@
+#ifndef _CPLEXCONTROL_H
+#define _CPLEXCONTROL_H
+int setup_initial_CGLP(CPXENVptr env, 
+					   CPXLPptr lp,
+					   const int param_k,
+					   const int param_m,
+					   const int param_n,
+					   double *b_coef,  
+					   double *q_coef, 
+					   MATRIX matrix_A, 
+					   MATRIX matrix_B, 
+					   MATRIX matrix_N, 
+					   MATRIX matrix_M);
+int setupGeneralLPCC_lp(CPXENVptr env, 
+						CPXLPptr lp,
+						double *c_coef, 
+						double *d_coef, 
+						double *b_coef,  
+						double *q_coef, 
+						MATRIX  matrix_A, 
+						MATRIX matrix_B, 
+						MATRIX matrix_N, 
+						MATRIX matrix_M,
+						int format_mode);
+int setupLP_E (CPXENVptr env, 
+			   CPXLPptr lp, 
+			   double *c_coef, 
+			   MATRIX matrix_A_c, 
+			   double *b_coef);
+int setupLP_GE (CPXENVptr env, 
+				CPXLPptr lp, 
+				double *c_coef,
+				MATRIX matrix_A_c,
+				double *b_coef);
+int add_ub_constraint(CPXENVptr env,
+					  CPXLPptr lp,
+					  double ub);
+int add_lb_constraint(CPXENVptr env,
+					  CPXLPptr lp,
+					  double lb);
+int cplexSolveLP(CPXENVptr env, 
+				 CPXLPptr lp, 
+				 STARTINFO start, 
+				 const int num_var,
+				 double *x_soln_p, 
+				 double *objval_p, 
+				 int *solnstat_p, 
+				 STARTINFO *start_p,
+				 int param_1,
+				 int param_2,
+				 int pre_rx_lp_condition);
+int relaxLPSolver(CPXENVptr env, 
+				  CPXLPptr rx_lp, 
+				  CONSTRAINT_SET *cuts_p,
+				  const int num_var, 
+				  int fix_count, 
+				  int* fixed_index_p,
+				  STARTINFO *start, 
+				  double *x_soln_p, 
+				  double *objval_p, 
+				  int *solnstat_p, 
+				  STARTINFO *start_p,
+				  int pre_rx_lp_condition);
+int setupnode_rx_lp(CPXENVptr env, 
+					CPXLPptr rx_lp, 
+					const int param_n,
+					const int param_m,
+					const int param_k,				
+					NODE activenode);
+int CPX_LPCCSolver(CPXENVptr env,
+				   CPXLPptr lp, 
+				   const int param_n, 
+				   const int param_m,
+				   const int param_k,
+				   double *start_point);
+int zeroobjectivefunc(CPXENVptr env, CPXLPptr lp);
+int lp_ub_control(CPXENVptr env,
+				  CPXLPptr lp,
+				  double ub,
+				  int reset_flag);
+int getVARbound(CPXENVptr env, 
+	CPXLPptr _lp, 
+	STARTINFO  *lp_start, 
+	STARTINFO *update_lp_start_p,
+	const int var_index,
+	const int maxormin,
+	double *bound,
+	int *condition);
+int getVARbound_baropt(CPXENVptr env, 
+	CPXLPptr _lp, 
+	const int var_index,
+	const int maxormin,
+	double *bound,
+	int *condition);
+#endif
+
