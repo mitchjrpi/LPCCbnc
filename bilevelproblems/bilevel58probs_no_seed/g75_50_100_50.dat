@@ -1,0 +1,4 @@
+param n := 75;
+param bdim := 50;
+param gdim := 100;
+param rank := 50;
