@@ -46,9 +46,7 @@ Solving the instances:
 ----------------------
 The folder LPCC_source_code contains a Makefile along with
 source code files in C and header files.
-It also contains an executable created on a Mac. The executable
-is not publicly available.
-To create another executable, CPLEX libraries are needed.
+To create an executable, CPLEX libraries are needed.
 The version used in the paper is CPLEX 12.6.2.
 The Makefile is a modified version of the standard one distributed
 with CPLEX, and must be edited to set correct values for SYSTEM,
