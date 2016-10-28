@@ -1,0 +1,120 @@
+input_compact_20101_2_100_20_30_20.dat.out:Solving time: 0.017875
+input_compact_20101_2_100_20_30_20.dat.out:Solving time (wall): 0
+input_compact_20101_2_100_20_30_70.dat.out:Solving time: 1.190621
+input_compact_20101_2_100_20_30_70.dat.out:Solving time (wall): 1
+input_compact_20101_2_100_20_60_20.dat.out:Solving time: 1.012274
+input_compact_20101_2_100_20_60_20.dat.out:Solving time (wall): 1
+input_compact_20101_2_100_20_60_70.dat.out:Solving time: 0.236485
+input_compact_20101_2_100_20_60_70.dat.out:Solving time (wall): 1
+input_compact_20101_2_150_20_100_20.dat.out:Solving time: 16.120384
+input_compact_20101_2_150_20_100_20.dat.out:Solving time (wall): 16
+input_compact_20101_2_150_20_100_70.dat.out:Solving time: 101.603921
+input_compact_20101_2_150_20_100_70.dat.out:Solving time (wall): 102
+input_compact_20101_2_150_20_30_20.dat.out:Solving time: 0.202498
+input_compact_20101_2_150_20_30_20.dat.out:Solving time (wall): 1
+input_compact_20101_2_150_20_30_70.dat.out:Solving time: 2.402589
+input_compact_20101_2_150_20_30_70.dat.out:Solving time (wall): 3
+input_compact_20101_2_200_20_120_20.dat.out:Solving time: 283.355006
+input_compact_20101_2_200_20_120_20.dat.out:Solving time (wall): 284
+input_compact_20101_2_200_20_120_70.dat.out:Solving time: 176.155285
+input_compact_20101_2_200_20_120_70.dat.out:Solving time (wall): 176
+input_compact_20101_2_200_20_30_20.dat.out:Solving time: 0.850194
+input_compact_20101_2_200_20_30_20.dat.out:Solving time (wall): 1
+input_compact_20101_2_200_20_30_70.dat.out:Solving time: 1546.324484
+input_compact_20101_2_200_20_30_70.dat.out:Solving time (wall): 1546
+input_compact_20102_2_100_20_30_20.dat.out:Solving time: 0.238601
+input_compact_20102_2_100_20_30_20.dat.out:Solving time (wall): 0
+input_compact_20102_2_100_20_30_70.dat.out:Solving time: 5.701765
+input_compact_20102_2_100_20_30_70.dat.out:Solving time (wall): 6
+input_compact_20102_2_100_20_60_20.dat.out:Solving time: 2.064700
+input_compact_20102_2_100_20_60_20.dat.out:Solving time (wall): 2
+input_compact_20102_2_100_20_60_70.dat.out:Solving time: 0.729644
+input_compact_20102_2_100_20_60_70.dat.out:Solving time (wall): 1
+input_compact_20102_2_150_20_100_20.dat.out:Solving time: 15.450291
+input_compact_20102_2_150_20_100_20.dat.out:Solving time (wall): 15
+input_compact_20102_2_150_20_100_70.dat.out:Solving time: 0.539073
+input_compact_20102_2_150_20_100_70.dat.out:Solving time (wall): 1
+input_compact_20102_2_150_20_30_20.dat.out:Solving time: 0.200062
+input_compact_20102_2_150_20_30_20.dat.out:Solving time (wall): 0
+input_compact_20102_2_150_20_30_70.dat.out:Solving time: 0.964982
+input_compact_20102_2_150_20_30_70.dat.out:Solving time (wall): 1
+input_compact_20102_2_200_20_120_20.dat.out:Solving time: 1017.497934
+input_compact_20102_2_200_20_120_20.dat.out:Solving time (wall): 1018
+input_compact_20102_2_200_20_120_70.dat.out:Solving time: 319.526972
+input_compact_20102_2_200_20_120_70.dat.out:Solving time (wall): 3803
+input_compact_20102_2_200_20_30_20.dat.out:Solving time: 1.170803
+input_compact_20102_2_200_20_30_20.dat.out:Solving time (wall): 1
+input_compact_20102_2_200_20_30_70.dat.out:Solving time: 0.217360
+input_compact_20102_2_200_20_30_70.dat.out:Solving time (wall): 0
+input_compact_20103_2_100_20_30_20.dat.out:Solving time: 0.545839
+input_compact_20103_2_100_20_30_20.dat.out:Solving time (wall): 1
+input_compact_20103_2_100_20_30_70.dat.out:Solving time: 0.614458
+input_compact_20103_2_100_20_30_70.dat.out:Solving time (wall): 1
+input_compact_20103_2_100_20_60_20.dat.out:Solving time: 0.349479
+input_compact_20103_2_100_20_60_20.dat.out:Solving time (wall): 0
+input_compact_20103_2_100_20_60_70.dat.out:Solving time: 0.104906
+input_compact_20103_2_100_20_60_70.dat.out:Solving time (wall): 0
+input_compact_20103_2_150_20_100_20.dat.out:Solving time: 2.324260
+input_compact_20103_2_150_20_100_20.dat.out:Solving time (wall): 3
+input_compact_20103_2_150_20_100_70.dat.out:Solving time: 29.496079
+input_compact_20103_2_150_20_100_70.dat.out:Solving time (wall): 29
+input_compact_20103_2_150_20_30_20.dat.out:Solving time: 0.357663
+input_compact_20103_2_150_20_30_20.dat.out:Solving time (wall): 0
+input_compact_20103_2_150_20_30_70.dat.out:Solving time: 0.158966
+input_compact_20103_2_150_20_30_70.dat.out:Solving time (wall): 0
+input_compact_20103_2_200_20_120_20.dat.out:Solving time: 11.194510
+input_compact_20103_2_200_20_120_20.dat.out:Solving time (wall): 11
+input_compact_20103_2_200_20_120_70.dat.out:Solving time: 25.739362
+input_compact_20103_2_200_20_120_70.dat.out:Solving time (wall): 26
+input_compact_20103_2_200_20_30_20.dat.out:Solving time: 22.068504
+input_compact_20103_2_200_20_30_20.dat.out:Solving time (wall): 22
+input_compact_20103_2_200_20_30_70.dat.out:Solving time: 1.185583
+input_compact_20103_2_200_20_30_70.dat.out:Solving time (wall): 1
+input_compact_20104_2_100_20_30_20.dat.out:Solving time: 0.083548
+input_compact_20104_2_100_20_30_20.dat.out:Solving time (wall): 0
+input_compact_20104_2_100_20_30_70.dat.out:Solving time: 0.130864
+input_compact_20104_2_100_20_30_70.dat.out:Solving time (wall): 0
+input_compact_20104_2_100_20_60_20.dat.out:Solving time: 0.370199
+input_compact_20104_2_100_20_60_20.dat.out:Solving time (wall): 0
+input_compact_20104_2_100_20_60_70.dat.out:Solving time: 1.062288
+input_compact_20104_2_100_20_60_70.dat.out:Solving time (wall): 1
+input_compact_20104_2_150_20_100_20.dat.out:Solving time: 4.843613
+input_compact_20104_2_150_20_100_20.dat.out:Solving time (wall): 5
+input_compact_20104_2_150_20_100_70.dat.out:Solving time: 132.027202
+input_compact_20104_2_150_20_100_70.dat.out:Solving time (wall): 132
+input_compact_20104_2_150_20_30_20.dat.out:Solving time: 1.596629
+input_compact_20104_2_150_20_30_20.dat.out:Solving time (wall): 2
+input_compact_20104_2_150_20_30_70.dat.out:Solving time: 0.607261
+input_compact_20104_2_150_20_30_70.dat.out:Solving time (wall): 0
+input_compact_20104_2_200_20_120_20.dat.out:Solving time: 31.687440
+input_compact_20104_2_200_20_120_20.dat.out:Solving time (wall): 31
+input_compact_20104_2_200_20_120_70.dat.out:Solving time: 47.073084
+input_compact_20104_2_200_20_120_70.dat.out:Solving time (wall): 47
+input_compact_20104_2_200_20_30_20.dat.out:Solving time: 0.693555
+input_compact_20104_2_200_20_30_20.dat.out:Solving time (wall): 1
+input_compact_20104_2_200_20_30_70.dat.out:Solving time: 1.475508
+input_compact_20104_2_200_20_30_70.dat.out:Solving time (wall): 2
+input_compact_20105_2_100_20_30_20.dat.out:Solving time: 0.098726
+input_compact_20105_2_100_20_30_20.dat.out:Solving time (wall): 0
+input_compact_20105_2_100_20_30_70.dat.out:Solving time: 0.457752
+input_compact_20105_2_100_20_30_70.dat.out:Solving time (wall): 0
+input_compact_20105_2_100_20_60_20.dat.out:Solving time: 0.367315
+input_compact_20105_2_100_20_60_20.dat.out:Solving time (wall): 0
+input_compact_20105_2_100_20_60_70.dat.out:Solving time: 3.690402
+input_compact_20105_2_100_20_60_70.dat.out:Solving time (wall): 3
+input_compact_20105_2_150_20_100_20.dat.out:Solving time: 32.484160
+input_compact_20105_2_150_20_100_20.dat.out:Solving time (wall): 33
+input_compact_20105_2_150_20_100_70.dat.out:Solving time: 10.900606
+input_compact_20105_2_150_20_100_70.dat.out:Solving time (wall): 11
+input_compact_20105_2_150_20_30_20.dat.out:Solving time: 3.700560
+input_compact_20105_2_150_20_30_20.dat.out:Solving time (wall): 4
+input_compact_20105_2_150_20_30_70.dat.out:Solving time: 6.169894
+input_compact_20105_2_150_20_30_70.dat.out:Solving time (wall): 6
+input_compact_20105_2_200_20_120_20.dat.out:Solving time: 491.751035
+input_compact_20105_2_200_20_120_20.dat.out:Solving time (wall): 492
+input_compact_20105_2_200_20_120_70.dat.out:Solving time: 86.080694
+input_compact_20105_2_200_20_120_70.dat.out:Solving time (wall): 86
+input_compact_20105_2_200_20_30_20.dat.out:Solving time: 2.796381
+input_compact_20105_2_200_20_30_20.dat.out:Solving time (wall): 3
+input_compact_20105_2_200_20_30_70.dat.out:Solving time: 0.332566
+input_compact_20105_2_200_20_30_70.dat.out:Solving time (wall): 1

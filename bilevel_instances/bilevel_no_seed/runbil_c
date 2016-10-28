@@ -1,0 +1,150 @@
+LPCC -m c -f 3 bil50_25_50_25.txt
+mv bil50_25_50_25.txt.out bil50_25_50_25_c.out
+
+LPCC -m c -f 3 bil50_25_50_50.txt
+mv bil50_25_50_50.txt.out bil50_25_50_50_c.out
+
+LPCC -m c -f 3 bil50_25_100_25.txt
+mv bil50_25_100_25.txt.out bil50_25_100_25_c.out
+
+LPCC -m c -f 3 bil50_25_100_50.txt
+mv bil50_25_100_50.txt.out bil50_25_100_50_c.out
+
+LPCC -m c -f 3 bil50_25_150_25.txt
+mv bil50_25_150_25.txt.out bil50_25_150_25_c.out
+
+LPCC -m c -f 3 bil50_25_150_50.txt
+mv bil50_25_150_50.txt.out bil50_25_150_50_c.out
+
+LPCC -m c -f 3 bil50_25_200_25.txt
+mv bil50_25_200_25.txt.out bil50_25_200_25_c.out
+
+LPCC -m c -f 3 bil50_25_200_50.txt
+mv bil50_25_200_50.txt.out bil50_25_200_50_c.out
+
+LPCC -m c -f 3 bil50_50_50_25.txt
+mv bil50_50_50_25.txt.out bil50_50_50_25_c.out
+
+LPCC -m c -f 3 bil50_50_50_50.txt
+mv bil50_50_50_50.txt.out bil50_50_50_50_c.out
+
+LPCC -m c -f 3 bil50_50_100_25.txt
+mv bil50_50_100_25.txt.out bil50_50_100_25_c.out
+
+LPCC -m c -f 3 bil50_50_100_50.txt
+mv bil50_50_100_50.txt.out bil50_50_100_50_c.out
+
+LPCC -m c -f 3 bil50_50_150_25.txt
+mv bil50_50_150_25.txt.out bil50_50_150_25_c.out
+
+LPCC -m c -f 3 bil50_50_150_50.txt
+mv bil50_50_150_50.txt.out bil50_50_150_50_c.out
+
+LPCC -m c -f 3 bil50_50_200_25.txt
+mv bil50_50_200_25.txt.out bil50_50_200_25_c.out
+
+LPCC -m c -f 3 bil50_50_200_50.txt
+mv bil50_50_200_50.txt.out bil50_50_200_50_c.out
+
+LPCC -m c -f 3 bil50_75_50_25.txt
+mv bil50_75_50_25.txt.out bil50_75_50_25_c.out
+
+LPCC -m c -f 3 bil50_75_50_50.txt
+mv bil50_75_50_50.txt.out bil50_75_50_50_c.out
+
+LPCC -m c -f 3 bil50_75_100_25.txt
+mv bil50_75_100_25.txt.out bil50_75_100_25_c.out
+
+LPCC -m c -f 3 bil50_75_100_50.txt
+mv bil50_75_100_50.txt.out bil50_75_100_50_c.out
+
+LPCC -m c -f 3 bil50_75_150_25.txt
+mv bil50_75_150_25.txt.out bil50_75_150_25_c.out
+
+LPCC -m c -f 3 bil50_75_150_50.txt
+mv bil50_75_150_50.txt.out bil50_75_150_50_c.out
+
+LPCC -m c -f 3 bil50_75_200_25.txt
+mv bil50_75_200_25.txt.out bil50_75_200_25_c.out
+
+LPCC -m c -f 3 bil50_75_200_50.txt
+mv bil50_75_200_50.txt.out bil50_75_200_50_c.out
+
+LPCC -m c -f 3 bil50_100_50_25.txt
+mv bil50_100_50_25.txt.out bil50_100_50_25_c.out
+
+LPCC -m c -f 3 bil50_100_50_50.txt
+mv bil50_100_50_50.txt.out bil50_100_50_50_c.out
+
+LPCC -m c -f 3 bil50_100_100_25.txt
+mv bil50_100_100_25.txt.out bil50_100_100_25_c.out
+
+LPCC -m c -f 3 bil50_100_100_50.txt
+mv bil50_100_100_50.txt.out bil50_100_100_50_c.out
+
+LPCC -m c -f 3 bil50_100_150_25.txt
+mv bil50_100_150_25.txt.out bil50_100_150_25_c.out
+
+LPCC -m c -f 3 bil50_100_150_50.txt
+mv bil50_100_150_50.txt.out bil50_100_150_50_c.out
+
+LPCC -m c -f 3 bil50_100_200_25.txt
+mv bil50_100_200_25.txt.out bil50_100_200_25_c.out
+
+LPCC -m c -f 3 bil50_100_200_50.txt
+mv bil50_100_200_50.txt.out bil50_100_200_50_c.out
+
+LPCC -m c -f 3 bil75_25_50_50.txt
+mv bil75_25_50_50.txt.out bil75_25_50_50_c.out
+
+LPCC -m c -f 3 bil75_25_100_50.txt
+mv bil75_25_100_50.txt.out bil75_25_100_50_c.out
+
+LPCC -m c -f 3 bil75_25_100_75.txt
+mv bil75_25_100_75.txt.out bil75_25_100_75_c.out
+
+LPCC -m c -f 3 bil75_50_50_50.txt
+mv bil75_50_50_50.txt.out bil75_50_50_50_c.out
+
+LPCC -m c -f 3 bil75_50_100_50.txt
+mv bil75_50_100_50.txt.out bil75_50_100_50_c.out
+
+LPCC -m c -f 3 bil75_75_50_50.txt
+mv bil75_75_50_50.txt.out bil75_75_50_50_c.out
+
+LPCC -m c -f 3 bil75_75_100_50.txt
+mv bil75_75_100_50.txt.out bil75_75_100_50_c.out
+
+LPCC -m c -f 3 bil75_75_100_75.txt
+mv bil75_75_100_75.txt.out bil75_75_100_75_c.out
+
+LPCC -m c -f 3 bil100_25_50_50.txt
+mv bil100_25_50_50.txt.out bil100_25_50_50_c.out
+
+LPCC -m c -f 3 bil100_25_75_50.txt
+mv bil100_25_75_50.txt.out bil100_25_75_50_c.out
+
+LPCC -m c -f 3 bil75_25_50_75.txt
+mv bil75_25_50_75.txt.out bil75_25_50_75_c.out
+
+LPCC -m c -f 3 bil75_50_50_75.txt
+mv bil75_50_50_75.txt.out bil75_50_50_75_c.out
+
+LPCC -m c -f 3 bil75_50_100_75.txt
+mv bil75_50_100_75.txt.out bil75_50_100_75_c.out
+
+LPCC -m c -f 3 bil75_75_50_75.txt
+mv bil75_75_50_75.txt.out bil75_75_50_75_c.out
+
+LPCC -m c -f 3 bil100_25_50_75.txt
+mv bil100_25_50_75.txt.out bil100_25_50_75_c.out
+
+LPCC -m c -f 3 bil100_25_50_100.txt
+mv bil100_25_50_100.txt.out bil100_25_50_100_c.out
+
+LPCC -m c -f 3 bil100_25_75_75.txt
+mv bil100_25_75_75.txt.out bil100_25_75_75_c.out
+
+LPCC -m c -f 3 bil100_25_75_100.txt
+mv bil100_25_75_100.txt.out bil100_25_75_100_c.out
+

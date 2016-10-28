@@ -1,0 +1,127 @@
+Instruction for Generating Output Data
+======================================
+
+There are two classes of problems:
+(1) 60 randomly generated LPCCs
+(2) LPCCs generated from bilevel problems.
+
+Generating the instances:
+-------------------------
+(1) 60 randomly generated LPCCs:
+The instances are in the folder LPCC60probs/input_files.
+The README.txt in the folder contains a description of the
+instances together with a description of the input format.
+
+The filenames end in dat.
+The names of the instances give several parameters of the instance:
+20101 to 20105: five instances with same parameters
+2: n, the dimension of x (same for all instances).
+100, 150, 200: m, dimension of y and w.
+20: k, the number of rows of A, B and b (same for all instances).
+30, 60, 100, 120: rank of M, constructed as LL^T.
+20, 70: density of A, B, L, N.
+
+A generator is not available for these instances. Pseudocode for
+the generator can be found in Procedure 4 in the paper.
+
+Basic data for the instances appears in Table 5, with performance
+data in Table 6, both in the paper.
+
+(2) LPCCs generated from bilevel problems:
+The instances are in the folder bilevel_instances.
+There are 50 instances in bilevel_no_seed
+and 48 instances in bilevel43254seed.
+The same README.txt file is in both subfolders.
+The instances were generated using ampl, so there are
+generate.mod, generate.dat, and generate.run files in
+each subfolder.
+The executable create_input_files in each subfolder will
+recreate the set of instances.
+Files of the form g..dat are original AMPL input files.
+Files of the form bil..txt are the problem instances created
+by AMPL, and are in an appropriate format for the code.
+
+
+Solving the instances:
+----------------------
+The folder LPCC_source_code contains a Makefile along with
+source code files in C and header files.
+It also contains an executable created on a Mac. The executable
+is not publicly available.
+To create another executable, CPLEX libraries are needed.
+The version used in the paper is CPLEX 12.6.2.
+The Makefile is a modified version of the standard one distributed
+with CPLEX, and must be edited to set correct values for SYSTEM,
+LIBFORMAT, CPLEXDIR, CONCERTDIR, and the various compiler and
+link options.
+Once the Makefile has been appropriately edited, object files
+and an executable LPCC can be created through the use of the
+command make.
+
+LPCC will read in problems in any of three formats. We only
+provide example files in the third (compact) format.
+The code is invoked using the command
+LPCC -m b -f 3 input.txt
+The "b" indicates the branch-and-cut code. To use unmodified
+CPLEX, replace the "b" by "c".
+The input file name can be anything, rather than our example
+of input.txt. The output is written to [inputfilename].out
+
+The instances are in different folders. A symbolic link
+can be created from these folders to the exectuable LPCC
+in order to solve each set of instances.
+
+(1) 60 randomly generated LPCCs
+The unix executable  runall_lpcc  will solve all the 60 problems
+using the branch-and-cut code. Before invoking this command, the
+input_files folder must be duplicated and renamed f3b.
+
+The unix executable  runall_cplex  will solve all the 60 problems
+using the unmodified CPLEX code. Before invoking this command, the
+input_files folder must be duplicated and renamed f3c.
+
+(2) LPCCs generated from bilevel problems.
+In each of the subfolders to bilevel_instances, there are two
+executable files: runbil_b and runbil_c.
+runbil_b will run through the set of instances and solve
+each of them using the branch-and-cut code.
+runbil_c will run through the set of instances and solve
+each of them using the unmodified CPLEX code.
+Note that the output files are currently in the folders,
+so if a user wants to recreate the output the user should
+first duplicate the folder and then remove all the output
+files.
+
+
+
+Processing the output:
+----------------------
+(1) 60 randomly generated LPCCs:
+The raw output files are in the directories cplex_output
+and LPCCoutput. The LPCCoutput directory is the output
+from the branch-and-cut code proposed in the paper,
+while the cplex_output is from using unmodified cplex.
+
+The excel spreadsheet basic_info_for_bin_probs_mac_pro.xlsx
+contains all the information that appears in Tables 5 and 6
+in the paper.
+
+This data was collected by using the unix command grep on
+the output files, editing the output from grep, and then
+importing that information into excel.
+
+The various .txt files in the output directories are the
+files obtained from grep, after some editing.
+
+(2) LPCCs generated from bilevel problems.
+The output files are in the same folders as the input files.
+Also in each folder is an excel spreadsheet containing
+information about the output, imported from files obtained
+by editing output from grep.
+
+(*) Constructing performance profiles and scatter plots:
+A python file was written to take two columns of raw data
+as input (namely, runtimes for the two algorithms) and turn
+this into a latex file. This file is in the folder
+making_performance_profiles, along with sample input and
+output files.

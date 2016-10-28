@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------
+Solve LPCC by CPLEX
+Preprocessing time: 8.501275
+Solving time: 5666.830711
+Total time: 5675.331986
+Preprocessing time (wall): 8
+Solving time (wall): 7430
+Total time (wall): 7438
+Total solved node: 3248691
+Preprocessing parameter:
+-Feasibility_recovery_breath: 0.600000
+-Feasibility_recovery_depth: 5
+-BoundCut generate loop: 3
+-BoundCut split: 1
+-DisjunctiveCut generate loop: 3584
+-SimpleCut generate loop: 3840
+-MccormickRefineCnt: 0
+-------------------------------------------------------------------------
+LP relaxation: 0.475835
+Improved lower bound:0.699877
+CPLEX time limit reached, and no feasible solution
+Best lower bound: 0.868998

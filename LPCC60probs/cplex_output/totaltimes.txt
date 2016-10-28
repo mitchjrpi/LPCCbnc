@@ -1,0 +1,120 @@
+input_compact_20101_2_100_20_30_20.dat.out:Total time: 1.771450
+input_compact_20101_2_100_20_30_20.dat.out:Total time (wall): 1
+input_compact_20101_2_100_20_30_70.dat.out:Total time: 12.906765
+input_compact_20101_2_100_20_30_70.dat.out:Total time (wall): 7
+input_compact_20101_2_100_20_60_20.dat.out:Total time: 8.185966
+input_compact_20101_2_100_20_60_20.dat.out:Total time (wall): 6
+input_compact_20101_2_100_20_60_70.dat.out:Total time: 8.374494
+input_compact_20101_2_100_20_60_70.dat.out:Total time (wall): 3
+input_compact_20101_2_150_20_100_20.dat.out:Total time: 31140.732099
+input_compact_20101_2_150_20_100_20.dat.out:Total time (wall): 7262
+input_compact_20101_2_150_20_100_70.dat.out:Total time: 34485.618928
+input_compact_20101_2_150_20_100_70.dat.out:Total time (wall): 7812
+input_compact_20101_2_150_20_30_20.dat.out:Total time: 6.941874
+input_compact_20101_2_150_20_30_20.dat.out:Total time (wall): 6
+input_compact_20101_2_150_20_30_70.dat.out:Total time: 40.109728
+input_compact_20101_2_150_20_30_70.dat.out:Total time (wall): 27
+input_compact_20101_2_200_20_120_20.dat.out:Total time: 5975.730886
+input_compact_20101_2_200_20_120_20.dat.out:Total time (wall): 7448
+input_compact_20101_2_200_20_120_70.dat.out:Total time: 6235.032843
+input_compact_20101_2_200_20_120_70.dat.out:Total time (wall): 7469
+input_compact_20101_2_200_20_30_20.dat.out:Total time: 49.493668
+input_compact_20101_2_200_20_30_20.dat.out:Total time (wall): 46
+input_compact_20101_2_200_20_30_70.dat.out:Total time: 6705.473081
+input_compact_20101_2_200_20_30_70.dat.out:Total time (wall): 9464
+input_compact_20102_2_100_20_30_20.dat.out:Total time: 5.361536
+input_compact_20102_2_100_20_30_20.dat.out:Total time (wall): 5
+input_compact_20102_2_100_20_30_70.dat.out:Total time: 6119.128060
+input_compact_20102_2_100_20_30_70.dat.out:Total time (wall): 7467
+input_compact_20102_2_100_20_60_20.dat.out:Total time: 13.430775
+input_compact_20102_2_100_20_60_20.dat.out:Total time (wall): 8
+input_compact_20102_2_100_20_60_70.dat.out:Total time: 390.745639
+input_compact_20102_2_100_20_60_70.dat.out:Total time (wall): 675
+input_compact_20102_2_150_20_100_20.dat.out:Total time: 2359.962048
+input_compact_20102_2_150_20_100_20.dat.out:Total time (wall): 2756
+input_compact_20102_2_150_20_100_70.dat.out:Total time: 11.085375
+input_compact_20102_2_150_20_100_70.dat.out:Total time (wall): 7
+input_compact_20102_2_150_20_30_20.dat.out:Total time: 19.535772
+input_compact_20102_2_150_20_30_20.dat.out:Total time (wall): 643
+input_compact_20102_2_150_20_30_70.dat.out:Total time: 27.010087
+input_compact_20102_2_150_20_30_70.dat.out:Total time (wall): 25
+input_compact_20102_2_200_20_120_20.dat.out:Total time: 6358.576219
+input_compact_20102_2_200_20_120_20.dat.out:Total time (wall): 8792
+input_compact_20102_2_200_20_120_70.dat.out:Total time: 4442.673936
+input_compact_20102_2_200_20_120_70.dat.out:Total time (wall): 7757
+input_compact_20102_2_200_20_30_20.dat.out:Total time: 64.643363
+input_compact_20102_2_200_20_30_20.dat.out:Total time (wall): 680
+input_compact_20102_2_200_20_30_70.dat.out:Total time: 18.500384
+input_compact_20102_2_200_20_30_70.dat.out:Total time (wall): 15
+input_compact_20103_2_100_20_30_20.dat.out:Total time: 10.789153
+input_compact_20103_2_100_20_30_20.dat.out:Total time (wall): 7
+input_compact_20103_2_100_20_30_70.dat.out:Total time: 14.139573
+input_compact_20103_2_100_20_30_70.dat.out:Total time (wall): 10
+input_compact_20103_2_100_20_60_20.dat.out:Total time: 6.761265
+input_compact_20103_2_100_20_60_20.dat.out:Total time (wall): 3
+input_compact_20103_2_100_20_60_70.dat.out:Total time: 2.297210
+input_compact_20103_2_100_20_60_70.dat.out:Total time (wall): 1
+input_compact_20103_2_150_20_100_20.dat.out:Total time: 16.181912
+input_compact_20103_2_150_20_100_20.dat.out:Total time (wall): 8
+input_compact_20103_2_150_20_100_70.dat.out:Total time: 6169.670986
+input_compact_20103_2_150_20_100_70.dat.out:Total time (wall): 8106
+input_compact_20103_2_150_20_30_20.dat.out:Total time: 22.329004
+input_compact_20103_2_150_20_30_20.dat.out:Total time (wall): 21
+input_compact_20103_2_150_20_30_70.dat.out:Total time: 9.644914
+input_compact_20103_2_150_20_30_70.dat.out:Total time (wall): 7
+input_compact_20103_2_200_20_120_20.dat.out:Total time: 5877.440560
+input_compact_20103_2_200_20_120_20.dat.out:Total time (wall): 7443
+input_compact_20103_2_200_20_120_70.dat.out:Total time: 6035.568604
+input_compact_20103_2_200_20_120_70.dat.out:Total time (wall): 7468
+input_compact_20103_2_200_20_30_20.dat.out:Total time: 1596.618520
+input_compact_20103_2_200_20_30_20.dat.out:Total time (wall): 2718
+input_compact_20103_2_200_20_30_70.dat.out:Total time: 84.311457
+input_compact_20103_2_200_20_30_70.dat.out:Total time (wall): 707
+input_compact_20104_2_100_20_30_20.dat.out:Total time: 4.569800
+input_compact_20104_2_100_20_30_20.dat.out:Total time (wall): 3
+input_compact_20104_2_100_20_30_70.dat.out:Total time: 3.485283
+input_compact_20104_2_100_20_30_70.dat.out:Total time (wall): 2
+input_compact_20104_2_100_20_60_20.dat.out:Total time: 8.483999
+input_compact_20104_2_100_20_60_20.dat.out:Total time (wall): 6
+input_compact_20104_2_100_20_60_70.dat.out:Total time: 10.534631
+input_compact_20104_2_100_20_60_70.dat.out:Total time (wall): 3
+input_compact_20104_2_150_20_100_20.dat.out:Total time: 42.183814
+input_compact_20104_2_150_20_100_20.dat.out:Total time (wall): 652
+input_compact_20104_2_150_20_100_70.dat.out:Total time: 6121.189467
+input_compact_20104_2_150_20_100_70.dat.out:Total time (wall): 7457
+input_compact_20104_2_150_20_30_20.dat.out:Total time: 21.240431
+input_compact_20104_2_150_20_30_20.dat.out:Total time (wall): 16
+input_compact_20104_2_150_20_30_70.dat.out:Total time: 32.621149
+input_compact_20104_2_150_20_30_70.dat.out:Total time (wall): 27
+input_compact_20104_2_200_20_120_20.dat.out:Total time: 6432.107335
+input_compact_20104_2_200_20_120_20.dat.out:Total time (wall): 8114
+input_compact_20104_2_200_20_120_70.dat.out:Total time: 6271.592972
+input_compact_20104_2_200_20_120_70.dat.out:Total time (wall): 7482
+input_compact_20104_2_200_20_30_20.dat.out:Total time: 45.197743
+input_compact_20104_2_200_20_30_20.dat.out:Total time (wall): 41
+input_compact_20104_2_200_20_30_70.dat.out:Total time: 45.247805
+input_compact_20104_2_200_20_30_70.dat.out:Total time (wall): 647
+input_compact_20105_2_100_20_30_20.dat.out:Total time: 1.971031
+input_compact_20105_2_100_20_30_20.dat.out:Total time (wall): 1
+input_compact_20105_2_100_20_30_70.dat.out:Total time: 8.987796
+input_compact_20105_2_100_20_30_70.dat.out:Total time (wall): 6
+input_compact_20105_2_100_20_60_20.dat.out:Total time: 3.826087
+input_compact_20105_2_100_20_60_20.dat.out:Total time (wall): 2
+input_compact_20105_2_100_20_60_70.dat.out:Total time: 6069.176271
+input_compact_20105_2_100_20_60_70.dat.out:Total time (wall): 7465
+input_compact_20105_2_150_20_100_20.dat.out:Total time: 2087.270917
+input_compact_20105_2_150_20_100_20.dat.out:Total time (wall): 2087
+input_compact_20105_2_150_20_100_70.dat.out:Total time: 5796.738255
+input_compact_20105_2_150_20_100_70.dat.out:Total time (wall): 7434
+input_compact_20105_2_150_20_30_20.dat.out:Total time: 40.781207
+input_compact_20105_2_150_20_30_20.dat.out:Total time (wall): 22
+input_compact_20105_2_150_20_30_70.dat.out:Total time: 709.741645
+input_compact_20105_2_150_20_30_70.dat.out:Total time (wall): 1351
+input_compact_20105_2_200_20_120_20.dat.out:Total time: 5785.588900
+input_compact_20105_2_200_20_120_20.dat.out:Total time (wall): 7455
+input_compact_20105_2_200_20_120_70.dat.out:Total time: 32828.728305
+input_compact_20105_2_200_20_120_70.dat.out:Total time (wall): 7917
+input_compact_20105_2_200_20_30_20.dat.out:Total time: 68.044946
+input_compact_20105_2_200_20_30_20.dat.out:Total time (wall): 53
+input_compact_20105_2_200_20_30_70.dat.out:Total time: 20.315023
+input_compact_20105_2_200_20_30_70.dat.out:Total time (wall): 17
