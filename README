@@ -18,6 +18,8 @@ Abstract
 A linear program with linear complementarity constraints (LPCC) requires the minimization of a linear objective over a set of linear constraints together with additional linear complementarity constraints. This class has emerged as a modeling paradigm for a broad collection of problems, including bilevel programs, Stackelberg games, inverse quadratic programs, and problems involving equilibrium constraints. The presence of the complementarity constraints results in a nonconvex optimization problem. We develop a branch-and-cut algorithm to find a global optimum for this class of optimization problems, where we branch directly on complementarities. We develop branching rules and feasibility recovery procedures and demonstrate their computational effectiveness in a comparison with CPLEX. The implementation builds on CPLEX through the use of callback routines. The computational results show that our approach is a strong alternative to constructing an integer programming formulation using big-$M$ terms to represent bounds for variables, with testing conducted on general LPCCs as well as on instances generated from bilevel programs with convex quadratic lower level problems.
 
 Keywords: linear programs with complementarity constraints, MPECs, branch and cut 
+
+
 Instruction for Generating Output Data
 ======================================
 
