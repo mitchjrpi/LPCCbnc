@@ -1,0 +1,345 @@
+Reading inputdata...
+Setup LPCC problem...
+Start solving...
+Preprocessing...
+ LPCC relaxation: 10.467577
+ Feasibility recovery...
+	Find a feasible solution with objective:88.087434 by directly rounding
+	Feasibility recovery refinement...
+		Search range  10.467577 - 49.277506
+	Find a feasible solution with objective:48.740697
+		Search range  10.467577 - 29.604137
+		Search range  29.604137 - 39.172417
+	Find a feasible solution with objective:37.783220
+		Search range  29.604137 - 33.693679
+		Search range  33.693679 - 35.738449
+	Find a feasible solution with objective:35.120409
+	Final find the best ub: 35.120409
+	Total feasibility recovery time:        4.038
+ Add disjunctive cut at root node...(loop=15)
+	Total time for generating cuts:        2.268s
+	After adding 0 disjunctive cuts, improved lp relaxation is 10.467577
+ Add simple cuts at root node...(loop=15)
+	Total time for generating cuts:        0.001
+	After adding 0 simple cuts, improved lp relaxation is 10.467577
+ Add bound cut at root node...(p=1, loop=3)
+	Total time for generating cuts:        0.000
+	After adding 0 bound cuts, improved lp relaxation is 0.000000
+ Initial subproblem generated: 1
+ terminating status in preprocess 0
+ Total preprocessing time: 6.314193
+ Total preprocessing wall clock time: 5
+mod500: LB:      10.4676 UB:     35.1204 EN:        0 LN:       0 PT:      0s
+mod500: LB:      11.8837 UB:     35.1204 EN:      500 LN:     250 PT:      2s
+mod500: LB:      12.9519 UB:     35.1204 EN:     1000 LN:     500 PT:      4s
+mod500: LB:      13.4052 UB:     35.1204 EN:     1500 LN:     750 PT:      5s
+mod500: LB:      13.8124 UB:     35.1204 EN:     2000 LN:    1000 PT:      7s
+mod500: LB:      14.0343 UB:     35.1204 EN:     2500 LN:    1250 PT:      8s
+mod500: LB:      14.3006 UB:     35.1204 EN:     3000 LN:    1500 PT:     10s
+mod500: LB:      14.3970 UB:     35.1204 EN:     3500 LN:    1750 PT:     11s
+mod500: LB:      14.5557 UB:     35.1204 EN:     4000 LN:    2000 PT:     13s
+mod500: LB:      14.6708 UB:     35.1204 EN:     4500 LN:    2249 PT:     14s
+mod500: LB:      14.7918 UB:     35.1204 EN:     5000 LN:    2499 PT:     16s
+mod500: LB:      14.8930 UB:     35.1204 EN:     5500 LN:    2749 PT:     17s
+mod500: LB:      15.0020 UB:     35.1204 EN:     6000 LN:    2999 PT:     19s
+mod500: LB:      15.0386 UB:     35.1204 EN:     6500 LN:    3248 PT:     20s
+mod500: LB:      15.1064 UB:     35.1204 EN:     7000 LN:    3498 PT:     22s
+mod500: LB:      15.1526 UB:     35.1204 EN:     7500 LN:    3748 PT:     23s
+mod500: LB:      15.2176 UB:     35.1204 EN:     8000 LN:    3998 PT:     25s
+mod500: LB:      15.2777 UB:     35.1204 EN:     8500 LN:    4248 PT:     26s
+mod500: LB:      15.3390 UB:     35.1204 EN:     9000 LN:    4498 PT:     28s
+mod500: LB:      15.4209 UB:     35.1204 EN:     9500 LN:    4747 PT:     29s
+mod500: LB:      15.4888 UB:     35.1204 EN:    10000 LN:    4997 PT:     31s
+mod500: LB:      15.5630 UB:     35.1204 EN:    10500 LN:    5247 PT:     33s
+mod500: LB:      15.5974 UB:     35.1204 EN:    11000 LN:    5497 PT:     34s
+mod500: LB:      15.6424 UB:     35.1204 EN:    11500 LN:    5747 PT:     36s
+mod500: LB:      15.6894 UB:     35.1204 EN:    12000 LN:    5997 PT:     37s
+mod500: LB:      15.7400 UB:     35.1204 EN:    12500 LN:    6247 PT:     39s
+mod500: LB:      15.7868 UB:     35.1204 EN:    13000 LN:    6496 PT:     40s
+mod500: LB:      15.8118 UB:     35.1204 EN:    13500 LN:    6746 PT:     41s
+mod500: LB:      15.8538 UB:     35.1204 EN:    14000 LN:    6996 PT:     43s
+mod500: LB:      15.8902 UB:     35.1204 EN:    14500 LN:    7246 PT:     44s
+mod500: LB:      15.9400 UB:     35.1204 EN:    15000 LN:    7496 PT:     46s
+mod500: LB:      15.9799 UB:     35.1204 EN:    15500 LN:    7746 PT:     48s
+mod500: LB:      16.0201 UB:     35.1204 EN:    16000 LN:    7996 PT:     49s
+mod500: LB:      16.0624 UB:     35.1204 EN:    16500 LN:    8246 PT:     51s
+mod500: LB:      16.0911 UB:     35.1204 EN:    17000 LN:    8496 PT:     52s
+mod500: LB:      16.1161 UB:     35.1204 EN:    17500 LN:    8746 PT:     54s
+mod500: LB:      16.1455 UB:     35.1204 EN:    18000 LN:    8996 PT:     55s
+mod500: LB:      16.1678 UB:     35.1204 EN:    18500 LN:    9246 PT:     57s
+mod500: LB:      16.2116 UB:     35.1204 EN:    19000 LN:    9496 PT:     58s
+mod500: LB:      16.2387 UB:     35.1204 EN:    19500 LN:    9746 PT:     60s
+mod500: LB:      16.2897 UB:     35.1204 EN:    20000 LN:    9995 PT:     61s
+mod500: LB:      16.3414 UB:     35.1204 EN:    20500 LN:   10245 PT:     63s
+mod500: LB:      16.3742 UB:     35.1204 EN:    21000 LN:   10495 PT:     64s
+mod500: LB:      16.4034 UB:     35.1204 EN:    21500 LN:   10745 PT:     66s
+mod500: LB:      16.4255 UB:     35.1204 EN:    22000 LN:   10994 PT:     67s
+mod500: LB:      16.4576 UB:     35.1204 EN:    22500 LN:   11243 PT:     69s
+mod500: LB:      16.4748 UB:     35.1204 EN:    23000 LN:   11493 PT:     70s
+mod500: LB:      16.4903 UB:     35.1204 EN:    23500 LN:   11743 PT:     72s
+mod500: LB:      16.5049 UB:     35.1204 EN:    24000 LN:   11993 PT:     73s
+mod500: LB:      16.5312 UB:     35.1204 EN:    24500 LN:   12243 PT:     75s
+mod500: LB:      16.5594 UB:     35.1204 EN:    25000 LN:   12492 PT:     77s
+mod500: LB:      16.5807 UB:     35.1204 EN:    25500 LN:   12741 PT:     78s
+mod500: LB:      16.5987 UB:     35.1204 EN:    26000 LN:   12991 PT:     80s
+mod500: LB:      16.6235 UB:     35.1204 EN:    26500 LN:   13241 PT:     81s
+mod500: LB:      16.6596 UB:     35.1204 EN:    27000 LN:   13491 PT:     83s
+mod500: LB:      16.6804 UB:     35.1204 EN:    27500 LN:   13741 PT:     84s
+mod500: LB:      16.6975 UB:     35.1204 EN:    28000 LN:   13991 PT:     86s
+mod500: LB:      16.7247 UB:     35.1204 EN:    28500 LN:   14241 PT:     88s
+mod500: LB:      16.7464 UB:     35.1204 EN:    29000 LN:   14491 PT:     89s
+mod500: LB:      16.7637 UB:     35.1204 EN:    29500 LN:   14741 PT:     91s
+mod500: LB:      16.7822 UB:     35.1204 EN:    30000 LN:   14991 PT:     93s
+mod500: LB:      16.7979 UB:     35.1204 EN:    30500 LN:   15241 PT:     94s
+mod500: LB:      16.8217 UB:     35.1204 EN:    31000 LN:   15491 PT:     96s
+mod500: LB:      16.8315 UB:     35.1204 EN:    31500 LN:   15741 PT:     97s
+mod500: LB:      16.8503 UB:     35.1204 EN:    32000 LN:   15991 PT:     99s
+mod500: LB:      16.8576 UB:     35.1204 EN:    32500 LN:   16241 PT:    101s
+mod500: LB:      16.8678 UB:     35.1204 EN:    33000 LN:   16490 PT:    103s
+mod500: LB:      16.8815 UB:     35.1204 EN:    33500 LN:   16740 PT:    104s
+mod500: LB:      16.8914 UB:     35.1204 EN:    34000 LN:   16989 PT:    106s
+mod500: LB:      16.9090 UB:     35.1204 EN:    34500 LN:   17239 PT:    108s
+mod500: LB:      16.9231 UB:     35.1204 EN:    35000 LN:   17489 PT:    109s
+mod500: LB:      16.9390 UB:     35.1204 EN:    35500 LN:   17738 PT:    111s
+mod500: LB:      16.9469 UB:     35.1204 EN:    36000 LN:   17986 PT:    113s
+mod500: LB:      16.9592 UB:     35.1204 EN:    36500 LN:   18235 PT:    114s
+mod500: LB:      16.9758 UB:     35.1204 EN:    37000 LN:   18485 PT:    116s
+mod500: LB:      16.9889 UB:     35.1204 EN:    37500 LN:   18734 PT:    118s
+mod500: LB:      17.0014 UB:     35.1204 EN:    38000 LN:   18984 PT:    119s
+mod500: LB:      17.0107 UB:     35.1204 EN:    38500 LN:   19234 PT:    121s
+mod500: LB:      17.0240 UB:     35.1204 EN:    39000 LN:   19483 PT:    123s
+mod500: LB:      17.0489 UB:     35.1204 EN:    39500 LN:   19732 PT:    124s
+mod500: LB:      17.0684 UB:     35.1204 EN:    40000 LN:   19982 PT:    126s
+mod500: LB:      17.0809 UB:     35.1204 EN:    40500 LN:   20232 PT:    128s
+mod500: LB:      17.1025 UB:     35.1204 EN:    41000 LN:   20482 PT:    129s
+mod500: LB:      17.1150 UB:     35.1204 EN:    41500 LN:   20732 PT:    131s
+mod500: LB:      17.1270 UB:     35.1204 EN:    42000 LN:   20982 PT:    133s
+mod500: LB:      17.1389 UB:     35.1204 EN:    42500 LN:   21231 PT:    135s
+mod500: LB:      17.1460 UB:     35.1204 EN:    43000 LN:   21481 PT:    136s
+mod500: LB:      17.1600 UB:     35.1204 EN:    43500 LN:   21731 PT:    138s
+mod500: LB:      17.1658 UB:     35.1204 EN:    44000 LN:   21981 PT:    140s
+mod500: LB:      17.1731 UB:     35.1204 EN:    44500 LN:   22230 PT:    142s
+mod500: LB:      17.1831 UB:     35.1204 EN:    45000 LN:   22480 PT:    143s
+mod500: LB:      17.1923 UB:     35.1204 EN:    45500 LN:   22729 PT:    145s
+mod500: LB:      17.2029 UB:     35.1204 EN:    46000 LN:   22979 PT:    147s
+mod500: LB:      17.2199 UB:     35.1204 EN:    46500 LN:   23229 PT:    148s
+mod500: LB:      17.2313 UB:     35.1204 EN:    47000 LN:   23479 PT:    150s
+mod500: LB:      17.2410 UB:     35.1204 EN:    47500 LN:   23729 PT:    152s
+mod500: LB:      17.2546 UB:     35.1204 EN:    48000 LN:   23978 PT:    153s
+mod500: LB:      17.2669 UB:     35.1204 EN:    48500 LN:   24228 PT:    155s
+mod500: LB:      17.2781 UB:     35.1204 EN:    49000 LN:   24478 PT:    157s
+mod500: LB:      17.2913 UB:     35.1204 EN:    49500 LN:   24728 PT:    158s
+mod500: LB:      17.3062 UB:     35.1204 EN:    50000 LN:   24977 PT:    160s
+mod500: LB:      17.3212 UB:     35.1204 EN:    50500 LN:   25227 PT:    162s
+mod500: LB:      17.3329 UB:     35.1204 EN:    51000 LN:   25477 PT:    163s
+mod500: LB:      17.3401 UB:     35.1204 EN:    51500 LN:   25727 PT:    165s
+mod500: LB:      17.3531 UB:     35.1204 EN:    52000 LN:   25977 PT:    167s
+mod500: LB:      17.3630 UB:     35.1204 EN:    52500 LN:   26227 PT:    168s
+mod500: LB:      17.3725 UB:     35.1204 EN:    53000 LN:   26477 PT:    170s
+mod500: LB:      17.3840 UB:     35.1204 EN:    53500 LN:   26727 PT:    172s
+mod500: LB:      17.3958 UB:     35.1204 EN:    54000 LN:   26977 PT:    174s
+mod500: LB:      17.4086 UB:     35.1204 EN:    54500 LN:   27227 PT:    175s
+mod500: LB:      17.4133 UB:     35.1204 EN:    55000 LN:   27477 PT:    177s
+mod500: LB:      17.4228 UB:     35.1204 EN:    55500 LN:   27725 PT:    179s
+mod500: LB:      17.4284 UB:     35.1204 EN:    56000 LN:   27975 PT:    180s
+mod500: LB:      17.4366 UB:     35.1204 EN:    56500 LN:   28224 PT:    182s
+mod500: LB:      17.4456 UB:     35.1204 EN:    57000 LN:   28474 PT:    184s
+mod500: LB:      17.4592 UB:     35.1204 EN:    57500 LN:   28723 PT:    185s
+mod500: LB:      17.4682 UB:     35.1204 EN:    58000 LN:   28973 PT:    187s
+mod500: LB:      17.4757 UB:     35.1204 EN:    58500 LN:   29223 PT:    189s
+mod500: LB:      17.4835 UB:     35.1204 EN:    59000 LN:   29472 PT:    190s
+mod500: LB:      17.4879 UB:     35.1204 EN:    59500 LN:   29719 PT:    192s
+mod500: LB:      17.4975 UB:     35.1204 EN:    60000 LN:   29969 PT:    194s
+mod500: LB:      17.5076 UB:     35.1204 EN:    60500 LN:   30218 PT:    196s
+mod500: LB:      17.5160 UB:     35.1204 EN:    61000 LN:   30468 PT:    197s
+mod500: LB:      17.5228 UB:     35.1204 EN:    61500 LN:   30717 PT:    199s
+mod500: LB:      17.5321 UB:     35.1204 EN:    62000 LN:   30965 PT:    201s
+mod500: LB:      17.5392 UB:     35.1204 EN:    62500 LN:   31215 PT:    202s
+mod500: LB:      17.5481 UB:     35.1204 EN:    63000 LN:   31465 PT:    204s
+mod500: LB:      17.5538 UB:     35.1204 EN:    63500 LN:   31715 PT:    206s
+mod500: LB:      17.5615 UB:     35.1204 EN:    64000 LN:   31965 PT:    208s
+mod500: LB:      17.5716 UB:     35.1204 EN:    64500 LN:   32215 PT:    209s
+mod500: LB:      17.5764 UB:     35.1204 EN:    65000 LN:   32464 PT:    211s
+mod500: LB:      17.5848 UB:     35.1204 EN:    65500 LN:   32714 PT:    212s
+mod500: LB:      17.5877 UB:     35.1204 EN:    66000 LN:   32964 PT:    214s
+mod500: LB:      17.5974 UB:     35.1204 EN:    66500 LN:   33214 PT:    216s
+mod500: LB:      17.6012 UB:     35.1204 EN:    67000 LN:   33464 PT:    217s
+mod500: LB:      17.6088 UB:     35.1204 EN:    67500 LN:   33714 PT:    219s
+mod500: LB:      17.6154 UB:     35.1204 EN:    68000 LN:   33962 PT:    221s
+mod500: LB:      17.6193 UB:     35.1204 EN:    68500 LN:   34212 PT:    222s
+mod500: LB:      17.6262 UB:     35.1204 EN:    69000 LN:   34462 PT:    224s
+mod500: LB:      17.6340 UB:     35.1204 EN:    69500 LN:   34712 PT:    225s
+mod500: LB:      17.6397 UB:     35.1204 EN:    70000 LN:   34962 PT:    227s
+mod500: LB:      17.6461 UB:     35.1204 EN:    70500 LN:   35211 PT:    228s
+mod500: LB:      17.6546 UB:     35.1204 EN:    71000 LN:   35461 PT:    230s
+mod500: LB:      17.6605 UB:     35.1204 EN:    71500 LN:   35711 PT:    232s
+mod500: LB:      17.6661 UB:     35.1204 EN:    72000 LN:   35961 PT:    233s
+mod500: LB:      17.6722 UB:     35.1204 EN:    72500 LN:   36209 PT:    235s
+mod500: LB:      17.6776 UB:     35.1204 EN:    73000 LN:   36459 PT:    236s
+mod500: LB:      17.6877 UB:     35.1204 EN:    73500 LN:   36709 PT:    238s
+mod500: LB:      17.6955 UB:     35.1204 EN:    74000 LN:   36959 PT:    239s
+mod500: LB:      17.7042 UB:     35.1204 EN:    74500 LN:   37209 PT:    241s
+mod500: LB:      17.7151 UB:     35.1204 EN:    75000 LN:   37457 PT:    242s
+mod500: LB:      17.7221 UB:     35.1204 EN:    75500 LN:   37707 PT:    244s
+mod500: LB:      17.7290 UB:     35.1204 EN:    76000 LN:   37957 PT:    245s
+mod500: LB:      17.7378 UB:     35.1204 EN:    76500 LN:   38206 PT:    247s
+mod500: LB:      17.7465 UB:     35.1204 EN:    77000 LN:   38456 PT:    249s
+mod500: LB:      17.7531 UB:     35.1204 EN:    77500 LN:   38706 PT:    250s
+mod500: LB:      17.7618 UB:     35.1204 EN:    78000 LN:   38955 PT:    252s
+mod500: LB:      17.7684 UB:     35.1204 EN:    78500 LN:   39205 PT:    253s
+mod500: LB:      17.7778 UB:     35.1204 EN:    79000 LN:   39455 PT:    255s
+mod500: LB:      17.7841 UB:     35.1204 EN:    79500 LN:   39705 PT:    257s
+mod500: LB:      17.7902 UB:     35.1204 EN:    80000 LN:   39955 PT:    258s
+mod500: LB:      17.7941 UB:     35.1204 EN:    80500 LN:   40205 PT:    260s
+mod500: LB:      17.8013 UB:     35.1204 EN:    81000 LN:   40455 PT:    261s
+mod500: LB:      17.8059 UB:     35.1204 EN:    81500 LN:   40704 PT:    263s
+mod500: LB:      17.8144 UB:     35.1204 EN:    82000 LN:   40954 PT:    264s
+mod500: LB:      17.8243 UB:     35.1204 EN:    82500 LN:   41204 PT:    266s
+mod500: LB:      17.8312 UB:     35.1204 EN:    83000 LN:   41454 PT:    267s
+mod500: LB:      17.8342 UB:     35.1204 EN:    83500 LN:   41704 PT:    269s
+mod500: LB:      17.8393 UB:     35.1204 EN:    84000 LN:   41954 PT:    271s
+mod500: LB:      17.8456 UB:     35.1204 EN:    84500 LN:   42204 PT:    272s
+mod500: LB:      17.8516 UB:     35.1204 EN:    85000 LN:   42453 PT:    274s
+mod500: LB:      17.8572 UB:     35.1204 EN:    85500 LN:   42703 PT:    276s
+mod500: LB:      17.8611 UB:     35.1204 EN:    86000 LN:   42952 PT:    277s
+mod500: LB:      17.8651 UB:     35.1204 EN:    86500 LN:   43202 PT:    279s
+mod500: LB:      17.8714 UB:     35.1204 EN:    87000 LN:   43452 PT:    281s
+mod500: LB:      17.8807 UB:     35.1204 EN:    87500 LN:   43701 PT:    282s
+mod500: LB:      17.8849 UB:     35.1204 EN:    88000 LN:   43950 PT:    284s
+mod500: LB:      17.8888 UB:     35.1204 EN:    88500 LN:   44200 PT:    285s
+mod500: LB:      17.8983 UB:     35.1204 EN:    89000 LN:   44449 PT:    287s
+mod500: LB:      17.9035 UB:     35.1204 EN:    89500 LN:   44699 PT:    289s
+mod500: LB:      17.9077 UB:     35.1204 EN:    90000 LN:   44948 PT:    290s
+mod500: LB:      17.9125 UB:     35.1204 EN:    90500 LN:   45198 PT:    292s
+mod500: LB:      17.9169 UB:     35.1204 EN:    91000 LN:   45448 PT:    293s
+mod500: LB:      17.9221 UB:     35.1204 EN:    91500 LN:   45698 PT:    295s
+mod500: LB:      17.9257 UB:     35.1204 EN:    92000 LN:   45948 PT:    297s
+mod500: LB:      17.9314 UB:     35.1204 EN:    92500 LN:   46197 PT:    298s
+mod500: LB:      17.9375 UB:     35.1204 EN:    93000 LN:   46447 PT:    300s
+mod500: LB:      17.9415 UB:     35.1204 EN:    93500 LN:   46697 PT:    302s
+mod500: LB:      17.9493 UB:     35.1204 EN:    94000 LN:   46947 PT:    303s
+mod500: LB:      17.9536 UB:     35.1204 EN:    94500 LN:   47197 PT:    305s
+mod500: LB:      17.9575 UB:     35.1204 EN:    95000 LN:   47447 PT:    306s
+mod500: LB:      17.9636 UB:     35.1204 EN:    95500 LN:   47697 PT:    308s
+mod500: LB:      17.9687 UB:     35.1204 EN:    96000 LN:   47947 PT:    309s
+mod500: LB:      17.9753 UB:     35.1204 EN:    96500 LN:   48197 PT:    311s
+mod500: LB:      17.9810 UB:     35.1204 EN:    97000 LN:   48447 PT:    313s
+mod500: LB:      17.9878 UB:     35.1204 EN:    97500 LN:   48696 PT:    314s
+mod500: LB:      17.9922 UB:     35.1204 EN:    98000 LN:   48946 PT:    316s
+mod500: LB:      17.9966 UB:     35.1204 EN:    98500 LN:   49196 PT:    317s
+mod500: LB:      18.0004 UB:     35.1204 EN:    99000 LN:   49445 PT:    319s
+mod500: LB:      18.0076 UB:     35.1204 EN:    99500 LN:   49695 PT:    321s
+mod500: LB:      18.0110 UB:     35.1204 EN:   100000 LN:   49944 PT:    322s
+mod500: LB:      18.0161 UB:     35.1204 EN:   100500 LN:   50194 PT:    324s
+mod500: LB:      18.0199 UB:     35.1204 EN:   101000 LN:   50444 PT:    326s
+mod500: LB:      18.0223 UB:     35.1204 EN:   101500 LN:   50694 PT:    328s
+mod500: LB:      18.0279 UB:     35.1204 EN:   102000 LN:   50943 PT:    329s
+mod500: LB:      18.0353 UB:     35.1204 EN:   102500 LN:   51192 PT:    331s
+mod500: LB:      18.0375 UB:     35.1204 EN:   103000 LN:   51442 PT:    333s
+mod500: LB:      18.0416 UB:     35.1204 EN:   103500 LN:   51692 PT:    334s
+mod500: LB:      18.0454 UB:     35.1204 EN:   104000 LN:   51941 PT:    336s
+mod500: LB:      18.0485 UB:     35.1204 EN:   104500 LN:   52190 PT:    338s
+mod500: LB:      18.0544 UB:     35.1204 EN:   105000 LN:   52439 PT:    339s
+mod500: LB:      18.0609 UB:     35.1204 EN:   105500 LN:   52689 PT:    341s
+mod500: LB:      18.0663 UB:     35.1204 EN:   106000 LN:   52939 PT:    343s
+mod500: LB:      18.0717 UB:     35.1204 EN:   106500 LN:   53188 PT:    344s
+mod500: LB:      18.0772 UB:     35.1204 EN:   107000 LN:   53438 PT:    346s
+mod500: LB:      18.0844 UB:     35.1204 EN:   107500 LN:   53687 PT:    347s
+mod500: LB:      18.0883 UB:     35.1204 EN:   108000 LN:   53937 PT:    349s
+mod500: LB:      18.0934 UB:     35.1204 EN:   108500 LN:   54187 PT:    351s
+mod500: LB:      18.0991 UB:     35.1204 EN:   109000 LN:   54437 PT:    352s
+mod500: LB:      18.1044 UB:     35.1204 EN:   109500 LN:   54687 PT:    354s
+mod500: LB:      18.1095 UB:     35.1204 EN:   110000 LN:   54937 PT:    355s
+mod500: LB:      18.1157 UB:     35.1204 EN:   110500 LN:   55187 PT:    357s
+mod500: LB:      18.1200 UB:     35.1204 EN:   111000 LN:   55437 PT:    359s
+mod500: LB:      18.1253 UB:     35.1204 EN:   111500 LN:   55687 PT:    361s
+mod500: LB:      18.1312 UB:     35.1204 EN:   112000 LN:   55936 PT:    362s
+mod500: LB:      18.1369 UB:     35.1204 EN:   112500 LN:   56186 PT:    364s
+mod500: LB:      18.1411 UB:     35.1204 EN:   113000 LN:   56436 PT:    365s
+mod500: LB:      18.1477 UB:     35.1204 EN:   113500 LN:   56686 PT:    367s
+mod500: LB:      18.1512 UB:     35.1204 EN:   114000 LN:   56936 PT:    369s
+mod500: LB:      18.1550 UB:     35.1204 EN:   114500 LN:   57186 PT:    370s
+mod500: LB:      18.1600 UB:     35.1204 EN:   115000 LN:   57435 PT:    372s
+mod500: LB:      18.1648 UB:     35.1204 EN:   115500 LN:   57685 PT:    374s
+mod500: LB:      18.1690 UB:     35.1204 EN:   116000 LN:   57934 PT:    375s
+mod500: LB:      18.1729 UB:     35.1204 EN:   116500 LN:   58184 PT:    377s
+mod500: LB:      18.1775 UB:     35.1204 EN:   117000 LN:   58432 PT:    379s
+mod500: LB:      18.1830 UB:     35.1204 EN:   117500 LN:   58682 PT:    380s
+mod500: LB:      18.1880 UB:     35.1204 EN:   118000 LN:   58931 PT:    382s
+mod500: LB:      18.1922 UB:     35.1204 EN:   118500 LN:   59181 PT:    384s
+mod500: LB:      18.1977 UB:     35.1204 EN:   119000 LN:   59428 PT:    385s
+mod500: LB:      18.2020 UB:     35.1204 EN:   119500 LN:   59677 PT:    387s
+mod500: LB:      18.2061 UB:     35.1204 EN:   120000 LN:   59926 PT:    389s
+mod500: LB:      18.2087 UB:     35.1204 EN:   120500 LN:   60176 PT:    391s
+mod500: LB:      18.2134 UB:     35.1204 EN:   121000 LN:   60425 PT:    392s
+mod500: LB:      18.2180 UB:     35.1204 EN:   121500 LN:   60675 PT:    394s
+mod500: LB:      18.2229 UB:     35.1204 EN:   122000 LN:   60925 PT:    396s
+mod500: LB:      18.2270 UB:     35.1204 EN:   122500 LN:   61175 PT:    397s
+mod500: LB:      18.2302 UB:     35.1204 EN:   123000 LN:   61425 PT:    399s
+mod500: LB:      18.2348 UB:     35.1204 EN:   123500 LN:   61675 PT:    401s
+mod500: LB:      18.2407 UB:     35.1204 EN:   124000 LN:   61925 PT:    402s
+mod500: LB:      18.2462 UB:     35.1204 EN:   124500 LN:   62175 PT:    404s
+mod500: LB:      18.2509 UB:     35.1204 EN:   125000 LN:   62424 PT:    406s
+mod500: LB:      18.2556 UB:     35.1204 EN:   125500 LN:   62673 PT:    407s
+mod500: LB:      18.2608 UB:     35.1204 EN:   126000 LN:   62923 PT:    409s
+mod500: LB:      18.2624 UB:     35.1204 EN:   126500 LN:   63173 PT:    411s
+mod500: LB:      18.2668 UB:     35.1204 EN:   127000 LN:   63422 PT:    412s
+mod500: LB:      18.2700 UB:     35.1204 EN:   127500 LN:   63672 PT:    414s
+mod500: LB:      18.2736 UB:     35.1204 EN:   128000 LN:   63922 PT:    416s
+mod500: LB:      18.2768 UB:     35.1204 EN:   128500 LN:   64171 PT:    417s
+mod500: LB:      18.2811 UB:     35.1204 EN:   129000 LN:   64421 PT:    419s
+mod500: LB:      18.2844 UB:     35.1204 EN:   129500 LN:   64671 PT:    421s
+mod500: LB:      18.2888 UB:     35.1204 EN:   130000 LN:   64921 PT:    422s
+mod500: LB:      18.2922 UB:     35.1204 EN:   130500 LN:   65171 PT:    424s
+mod500: LB:      18.2960 UB:     35.1204 EN:   131000 LN:   65421 PT:    426s
+mod500: LB:      18.2994 UB:     35.1204 EN:   131500 LN:   65670 PT:    428s
+mod500: LB:      18.3033 UB:     35.1204 EN:   132000 LN:   65919 PT:    429s
+mod500: LB:      18.3092 UB:     35.1204 EN:   132500 LN:   66167 PT:    431s
+mod500: LB:      18.3129 UB:     35.1204 EN:   133000 LN:   66416 PT:    433s
+mod500: LB:      18.3149 UB:     35.1204 EN:   133500 LN:   66666 PT:    434s
+mod500: LB:      18.3190 UB:     35.1204 EN:   134000 LN:   66915 PT:    436s
+mod500: LB:      18.3205 UB:     35.1204 EN:   134500 LN:   67165 PT:    438s
+mod500: LB:      18.3225 UB:     35.1204 EN:   135000 LN:   67415 PT:    440s
+mod500: LB:      18.3266 UB:     35.1204 EN:   135500 LN:   67665 PT:    442s
+mod500: LB:      18.3286 UB:     35.1204 EN:   136000 LN:   67915 PT:    443s
+mod500: LB:      18.3336 UB:     35.1204 EN:   136500 LN:   68164 PT:    445s
+mod500: LB:      18.3383 UB:     35.1204 EN:   137000 LN:   68414 PT:    447s
+mod500: LB:      18.3404 UB:     35.1204 EN:   137500 LN:   68664 PT:    449s
+mod500: LB:      18.3441 UB:     35.1204 EN:   138000 LN:   68914 PT:    450s
+mod500: LB:      18.3477 UB:     35.1204 EN:   138500 LN:   69164 PT:    452s
+mod500: LB:      18.3513 UB:     35.1204 EN:   139000 LN:   69414 PT:    454s
+mod500: LB:      18.3535 UB:     35.1204 EN:   139500 LN:   69664 PT:    455s
+mod500: LB:      18.3561 UB:     35.1204 EN:   140000 LN:   69914 PT:    457s
+mod500: LB:      18.3601 UB:     35.1204 EN:   140500 LN:   70163 PT:    459s
+mod500: LB:      18.3635 UB:     35.1204 EN:   141000 LN:   70413 PT:    460s
+mod500: LB:      18.3666 UB:     35.1204 EN:   141500 LN:   70663 PT:    462s
+mod500: LB:      18.3692 UB:     35.1204 EN:   142000 LN:   70909 PT:    464s
+mod500: LB:      18.3738 UB:     35.1204 EN:   142500 LN:   71158 PT:    466s
+	Find better upperbound: 19.279265. Current lowerbound: 18.374794
+mod500: LB:      18.3765 UB:     19.2793 EN:   143000 LN:    9867 PT:    468s
+mod500: LB:      18.3807 UB:     19.2793 EN:   143500 LN:    9863 PT:    469s
+mod500: LB:      18.3846 UB:     19.2793 EN:   144000 LN:    9857 PT:    470s
+mod500: LB:      18.3878 UB:     19.2793 EN:   144500 LN:    9856 PT:    471s
+mod500: LB:      18.3922 UB:     19.2793 EN:   145000 LN:    9855 PT:    473s
+mod500: LB:      18.3951 UB:     19.2793 EN:   145500 LN:    9841 PT:    474s
+mod500: LB:      18.3982 UB:     19.2793 EN:   146000 LN:    9836 PT:    475s
+mod500: LB:      18.4025 UB:     19.2793 EN:   146500 LN:    9829 PT:    476s
+mod500: LB:      18.4067 UB:     19.2793 EN:   147000 LN:    9821 PT:    477s
+mod500: LB:      18.4101 UB:     19.2793 EN:   147500 LN:    9824 PT:    479s
+	Find better upperbound: 18.412059. Current lowerbound: 18.412059
+
+-------------------------------------------------------------------------
+Solve LPCC by Branch and cut.
+Preprocessing time: 6.314193
+Solving time: 479.683133
+Total time: 485.997326
+Preprocessing time (wall): 5
+Solving time (wall): 3879
+Total time (wall): 3884
+Total solved node: 147862
+-------------------------------------------------------------------------
+LP relaxation: 10.467577
+Improved lower bound:10.467577
+LPCC is feasible and bounded
+Optimal value: 18.412059
+Save solution to file lpcc.txt.out

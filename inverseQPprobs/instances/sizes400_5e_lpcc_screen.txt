@@ -1,0 +1,143 @@
+Reading inputdata...
+Setup LPCC problem...
+Start solving...
+Preprocessing...
+ LPCC relaxation: 7.940641
+ Feasibility recovery...
+	Find a feasible solution with objective:65.321928 by directly rounding
+	Feasibility recovery refinement...
+		Search range  7.940641 - 36.631284
+	Find a feasible solution with objective:35.574272
+		Search range  7.940641 - 21.757456
+		Search range  21.757456 - 28.665864
+		Search range  28.665864 - 32.120068
+		Search range  32.120068 - 33.847170
+		Search range  33.847170 - 34.710721
+	Unable to recover a feasible solution
+	Total feasibility recovery time:        1.844
+ Add disjunctive cut at root node...(loop=20)
+	Total time for generating cuts:        0.864s
+	After adding 0 disjunctive cuts, improved lp relaxation is 7.940641
+ Add simple cuts at root node...(loop=20)
+	Total time for generating cuts:        0.001
+	After adding 0 simple cuts, improved lp relaxation is 7.940641
+ Add bound cut at root node...(p=1, loop=3)
+	Total time for generating cuts:        0.000
+	After adding 0 bound cuts, improved lp relaxation is 0.000000
+ Initial subproblem generated: 1
+ terminating status in preprocess 0
+ Total preprocessing time: 2.716982
+ Total preprocessing wall clock time: 2
+mod500: LB:       7.9406 UB:     35.5743 EN:        0 LN:       0 PT:      0s
+mod500: LB:       9.0765 UB:     35.5743 EN:      500 LN:     250 PT:      2s
+mod500: LB:       9.3564 UB:     35.5743 EN:     1000 LN:     500 PT:      3s
+mod500: LB:       9.5540 UB:     35.5743 EN:     1500 LN:     750 PT:      4s
+mod500: LB:       9.6954 UB:     35.5743 EN:     2000 LN:    1000 PT:      5s
+mod500: LB:      10.0223 UB:     35.5743 EN:     2500 LN:    1250 PT:      6s
+mod500: LB:      10.1337 UB:     35.5743 EN:     3000 LN:    1499 PT:      7s
+mod500: LB:      10.1793 UB:     35.5743 EN:     3500 LN:    1749 PT:      9s
+mod500: LB:      10.2672 UB:     35.5743 EN:     4000 LN:    1999 PT:     10s
+mod500: LB:      10.3669 UB:     35.5743 EN:     4500 LN:    2249 PT:     11s
+mod500: LB:      10.4216 UB:     35.5743 EN:     5000 LN:    2499 PT:     12s
+mod500: LB:      10.4743 UB:     35.5743 EN:     5500 LN:    2748 PT:     13s
+mod500: LB:      10.5062 UB:     35.5743 EN:     6000 LN:    2998 PT:     14s
+mod500: LB:      10.5289 UB:     35.5743 EN:     6500 LN:    3248 PT:     15s
+mod500: LB:      10.5866 UB:     35.5743 EN:     7000 LN:    3498 PT:     17s
+mod500: LB:      10.6213 UB:     35.5743 EN:     7500 LN:    3748 PT:     18s
+mod500: LB:      10.6575 UB:     35.5743 EN:     8000 LN:    3998 PT:     19s
+mod500: LB:      10.6772 UB:     35.5743 EN:     8500 LN:    4248 PT:     20s
+mod500: LB:      10.7025 UB:     35.5743 EN:     9000 LN:    4497 PT:     21s
+mod500: LB:      10.7301 UB:     35.5743 EN:     9500 LN:    4747 PT:     22s
+mod500: LB:      10.7452 UB:     35.5743 EN:    10000 LN:    4996 PT:     23s
+mod500: LB:      10.7740 UB:     35.5743 EN:    10500 LN:    5246 PT:     24s
+mod500: LB:      10.7941 UB:     35.5743 EN:    11000 LN:    5496 PT:     26s
+mod500: LB:      10.8095 UB:     35.5743 EN:    11500 LN:    5746 PT:     27s
+mod500: LB:      10.8266 UB:     35.5743 EN:    12000 LN:    5996 PT:     28s
+mod500: LB:      10.8548 UB:     35.5743 EN:    12500 LN:    6246 PT:     29s
+mod500: LB:      10.8786 UB:     35.5743 EN:    13000 LN:    6496 PT:     30s
+mod500: LB:      10.8959 UB:     35.5743 EN:    13500 LN:    6746 PT:     31s
+mod500: LB:      10.9088 UB:     35.5743 EN:    14000 LN:    6996 PT:     33s
+mod500: LB:      10.9171 UB:     35.5743 EN:    14500 LN:    7246 PT:     34s
+mod500: LB:      10.9331 UB:     35.5743 EN:    15000 LN:    7496 PT:     35s
+mod500: LB:      10.9479 UB:     35.5743 EN:    15500 LN:    7746 PT:     36s
+mod500: LB:      10.9696 UB:     35.5743 EN:    16000 LN:    7996 PT:     37s
+mod500: LB:      10.9892 UB:     35.5743 EN:    16500 LN:    8246 PT:     38s
+	Find better upperbound: 13.342612. Current lowerbound: 10.997326
+  y variable for branching zero   value: 774,  0
+  y variable for branching zero   value: 734,  0
+  y variable for branching zero   value: 795,  0
+  y variable for branching zero   value: 779,  0
+  y variable for branching zero   value: 868,  0
+  y variable for branching zero   value: 767,  0
+  y variable for branching zero   value: 875,  0
+mod500: LB:      11.0058 UB:     13.3426 EN:    17000 LN:    3947 PT:     39s
+  y variable for branching zero   value: 777,  0
+  y variable for branching zero   value: 884,  0
+  y variable for branching zero   value: 812,  0
+  y variable for branching zero   value: 779,  0
+  y variable for branching zero   value: 721,  0
+  y variable for branching zero   value: 761,  0
+  y variable for branching zero   value: 779,  0
+  y variable for branching zero   value: 721,  0
+  y variable for branching zero   value: 725,  0
+  y variable for branching zero   value: 767,  0
+  y variable for branching zero   value: 774,  0
+  y variable for branching zero   value: 690,  0
+  y variable for branching zero   value: 754,  0
+mod500: LB:      11.0167 UB:     13.3426 EN:    17500 LN:    4058 PT:     40s
+  y variable for branching zero   value: 789,  0
+  y variable for branching zero   value: 762,  0
+  y variable for branching zero   value: 744,  0
+	Find better upperbound: 11.319852. Current lowerbound: 11.018046
+  y variable for branching zero   value: 847,  0
+  y variable for branching zero   value: 810,  0
+  y variable for branching zero   value: 694,  0
+  y variable for branching zero   value: 723,  0
+  y variable for branching zero   value: 758,  0
+  y variable for branching zero   value: 886,  0
+  y variable for branching zero   value: 809,  0
+  y variable for branching zero   value: 832,  0
+  y variable for branching zero   value: 873,  0
+mod500: LB:      11.0363 UB:     11.3199 EN:    18000 LN:     433 PT:     42s
+  y variable for branching zero   value: 734,  0
+  y variable for branching zero   value: 873,  0
+  y variable for branching zero   value: 779,  0
+  y variable for branching zero   value: 774,  0
+  y variable for branching zero   value: 809,  0
+  y variable for branching zero   value: 741,  0
+  y variable for branching zero   value: 744,  0
+  y variable for branching zero   value: 761,  0
+  y variable for branching zero   value: 843,  0
+  y variable for branching zero   value: 734,  0
+  y variable for branching zero   value: 767,  0
+mod500: LB:      11.0499 UB:     11.3199 EN:    18500 LN:     419 PT:     43s
+  y variable for branching zero   value: 755,  0
+  y variable for branching zero   value: 765,  0
+  y variable for branching zero   value: 777,  0
+  y variable for branching zero   value: 868,  0
+  y variable for branching zero   value: 795,  0
+  y variable for branching zero   value: 868,  0
+  y variable for branching zero   value: 825,  0
+  y variable for branching zero   value: 843,  0
+mod500: LB:      11.0605 UB:     11.3199 EN:    19000 LN:     411 PT:     44s
+  y variable for branching zero   value: 741,  0
+  y variable for branching zero   value: 856,  0
+  y variable for branching zero   value: 790,  0
+  y variable for branching zero   value: 796,  0
+	Find better upperbound: 11.064335. Current lowerbound: 11.064618
+
+-------------------------------------------------------------------------
+Solve LPCC by Branch and cut.
+Preprocessing time: 2.716982
+Solving time: 44.733334
+Total time: 47.450316
+Preprocessing time (wall): 2
+Solving time (wall): 45
+Total time (wall): 47
+Total solved node: 19302
+-------------------------------------------------------------------------
+LP relaxation: 7.940641
+Improved lower bound:7.940641
+LPCC is feasible and bounded
+Optimal value: 11.064335
+Save solution to file lpcc.txt.out

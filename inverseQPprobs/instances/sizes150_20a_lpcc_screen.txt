@@ -1,0 +1,86 @@
+Reading inputdata...
+Setup LPCC problem...
+Start solving...
+Preprocessing...
+ LPCC relaxation: 10.100103
+ Feasibility recovery...
+	Find a feasible solution with objective:76.076867 by directly rounding
+	Feasibility recovery refinement...
+		Search range  10.100103 - 43.088485
+		Search range  43.088485 - 59.582676
+		Search range  59.582676 - 67.829771
+		Search range  67.829771 - 71.953319
+		Search range  71.953319 - 74.015093
+		Search range  74.015093 - 75.045980
+	Find a feasible solution with objective:73.557017
+	Final find the best ub: 73.557017
+	Total feasibility recovery time:        1.148
+ Add disjunctive cut at root node...(loop=15)
+	Total time for generating cuts:        2.399s
+	After adding 0 disjunctive cuts, improved lp relaxation is 10.100103
+ Add simple cuts at root node...(loop=15)
+	Total time for generating cuts:        0.001
+	After adding 0 simple cuts, improved lp relaxation is 10.100103
+ Add bound cut at root node...(p=1, loop=3)
+	Total time for generating cuts:        0.000
+	After adding 0 bound cuts, improved lp relaxation is 0.000000
+ Initial subproblem generated: 1
+ terminating status in preprocess 0
+ Total preprocessing time: 3.556433
+ Total preprocessing wall clock time: 2
+mod500: LB:      10.1001 UB:     73.5570 EN:        0 LN:       0 PT:      0s
+mod500: LB:      11.3424 UB:     73.5570 EN:      500 LN:     250 PT:      2s
+mod500: LB:      11.7688 UB:     73.5570 EN:     1000 LN:     500 PT:      3s
+mod500: LB:      12.0321 UB:     73.5570 EN:     1500 LN:     750 PT:      5s
+mod500: LB:      12.2226 UB:     73.5570 EN:     2000 LN:    1000 PT:      6s
+mod500: LB:      12.4145 UB:     73.5570 EN:     2500 LN:    1250 PT:      8s
+mod500: LB:      12.5020 UB:     73.5570 EN:     3000 LN:    1500 PT:      9s
+mod500: LB:      12.5898 UB:     73.5570 EN:     3500 LN:    1750 PT:     10s
+mod500: LB:      12.6475 UB:     73.5570 EN:     4000 LN:    2000 PT:     12s
+mod500: LB:      12.7332 UB:     73.5570 EN:     4500 LN:    2250 PT:     13s
+mod500: LB:      12.7778 UB:     73.5570 EN:     5000 LN:    2500 PT:     14s
+mod500: LB:      12.8314 UB:     73.5570 EN:     5500 LN:    2750 PT:     16s
+mod500: LB:      12.8962 UB:     73.5570 EN:     6000 LN:    3000 PT:     17s
+mod500: LB:      12.9475 UB:     73.5570 EN:     6500 LN:    3250 PT:     18s
+mod500: LB:      13.0002 UB:     73.5570 EN:     7000 LN:    3500 PT:     20s
+mod500: LB:      13.0262 UB:     73.5570 EN:     7500 LN:    3750 PT:     21s
+mod500: LB:      13.0598 UB:     73.5570 EN:     8000 LN:    4000 PT:     22s
+mod500: LB:      13.0818 UB:     73.5570 EN:     8500 LN:    4250 PT:     24s
+mod500: LB:      13.1026 UB:     73.5570 EN:     9000 LN:    4500 PT:     25s
+mod500: LB:      13.1476 UB:     73.5570 EN:     9500 LN:    4750 PT:     26s
+mod500: LB:      13.1732 UB:     73.5570 EN:    10000 LN:    5000 PT:     28s
+mod500: LB:      13.1927 UB:     73.5570 EN:    10500 LN:    5250 PT:     29s
+mod500: LB:      13.2111 UB:     73.5570 EN:    11000 LN:    5500 PT:     30s
+mod500: LB:      13.2423 UB:     73.5570 EN:    11500 LN:    5750 PT:     32s
+mod500: LB:      13.2708 UB:     73.5570 EN:    12000 LN:    6000 PT:     33s
+mod500: LB:      13.2909 UB:     73.5570 EN:    12500 LN:    6250 PT:     34s
+mod500: LB:      13.3080 UB:     73.5570 EN:    13000 LN:    6500 PT:     36s
+mod500: LB:      13.3284 UB:     73.5570 EN:    13500 LN:    6750 PT:     37s
+mod500: LB:      13.3443 UB:     73.5570 EN:    14000 LN:    7000 PT:     38s
+mod500: LB:      13.3692 UB:     73.5570 EN:    14500 LN:    7250 PT:     39s
+mod500: LB:      13.3878 UB:     73.5570 EN:    15000 LN:    7500 PT:     41s
+mod500: LB:      13.4072 UB:     73.5570 EN:    15500 LN:    7750 PT:     42s
+mod500: LB:      13.4276 UB:     73.5570 EN:    16000 LN:    8000 PT:     43s
+mod500: LB:      13.4421 UB:     73.5570 EN:    16500 LN:    8250 PT:     44s
+mod500: LB:      13.4563 UB:     73.5570 EN:    17000 LN:    8500 PT:     46s
+mod500: LB:      13.4646 UB:     73.5570 EN:    17500 LN:    8750 PT:     47s
+mod500: LB:      13.4755 UB:     73.5570 EN:    18000 LN:    9000 PT:     49s
+mod500: LB:      13.4897 UB:     73.5570 EN:    18500 LN:    9250 PT:     50s
+	Find better upperbound: 13.502175. Current lowerbound: 13.495275
+mod500: LB:      13.4995 UB:     13.5022 EN:    19000 LN:      11 PT:     51s
+
+-------------------------------------------------------------------------
+Solve LPCC by Branch and cut.
+Preprocessing time: 3.556433
+Solving time: 51.566787
+Total time: 55.123220
+Preprocessing time (wall): 2
+Solving time (wall): 52
+Total time (wall): 54
+Total solved node: 19142
+-------------------------------------------------------------------------
+LP relaxation: 10.100103
+Improved lower bound:10.100103
+LPCC is feasible and bounded
+Optimal value: 13.502175
+Save solution to file lpcc.txt.out

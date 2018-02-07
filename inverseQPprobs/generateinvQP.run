@@ -1,0 +1,573 @@
+reset;
+
+option cplex_options 'mipdisplay=2 mipgap=1e-6 time=3600 threads=1';
+
+#option randseed 0;
+
+model sizes.mod;
+model generateinvQP.mod;
+data generateinvQP.dat;
+
+problem LPrelax: x, b, c, zx, zb, zc, lambda,
+          inverseQPobj, gradcon1, gradcon2, zxdef1, zxdef2,
+          zbdef1, zbdef2, zcdef1, zcdef2, lowerfeas;
+
+problem MIP: x, b, c, zx, zb, zc, lambda,
+          inverseQPobj, gradcon1, gradcon2, zxdef1, zxdef2,
+          zbdef1, zbdef2, zcdef1, zcdef2, lowerfeas,
+          zcomp, complambda, compw, wvar, calcw;
+
+solve LPrelax;
+
+display m,n;
+
+option cplex_options 'mipdisplay=2';
+
+#
+# Follow construction of Jara-Moroni, Pang, Wachter: MP: DC for LPCCs
+#
+# Set up problems of the form:
+#
+# min  || (x,b,c) - (xbar,bbar,cbar) ||_1
+#  (x,b,c)
+#
+# s.t. -ux <= x <= ux, -ub <= b <= ub, -uc <= c <= uc
+#       x in argmin{0.5 y^TQy + C^Ty : Ay >= b}
+#              y
+#
+# Equivalently:
+# min         e^Tzx + e^Tzb + e^Tzc
+#  (x,b,c,zx,zb,zc,lambda)
+#
+# s.t. -ux <= x <= ux, -ub <= b <= ub, -uc <= c <= uc
+#        x+zx >=  xbar
+#       -x+zx >= -xbar
+#        b+zb >=  bbar
+#       -b+zb >= -bbar
+#        c+zc >=  cbar
+#       -c+zc >= -cbar
+#       Qx + c - A^T lambda >= 0
+#      -Qx - c + A^T lambda >= 0
+#       -lambda >= -ulambda
+#      0 <= lambda \perp Ax - b >= 0
+#
+# A is m times n, everything else dimensioned appropriately.
+# Q is positive definite.
+#
+#
+
+
+
+#
+# The output format has only inequalities.
+#
+# NOTE: the LPCC code assumes all variables are nonnegative,
+# so the primal variables x,b,c need to be split.
+# The constraints already force the z variables to be nonnegative.
+#
+#  We order the variables as
+#    xp,xm,bp,bm,cp,cm,zx,zb,zc,lambda
+#
+#  We order the constraints as:
+#
+#        -xp >= -ux
+#        -xm >= -ux
+#        -bp >= -ub
+#        -bm >= -ub
+#        -cp >= -uc
+#        -cm >= -uc
+#        xp-xm+zx >=  xbar
+#       -xp+xm+zx >= -xbar
+#        bp-bm+zb >=  bbar
+#       -bp+bm+zb >= -bbar
+#        cp-cm+zc >=  cbar
+#       -cp+cm+zc >= -cbar
+#       -lambda >= -ulambda
+#       Qxp-Qxm + cp-cm - A^T lambda >= 0
+#      -Qxp+Qxm - cp+cm + A^T lambda >= 0
+
+# 
+# Construct the instances in format_3.
+# 
+# The matrices are stored in a sparse manner:
+# [[#rows,#cols,#nonzeroes],
+# [0,#nonzeroes in row 1,#nonzeroes in rows 1 and 2,
+# #nonzeroes in rows 1 and 2 and 3,...,
+# #nonzeroes in rows 1..(#rows-1)],
+# [#nonzeroes in row 1,#nonzeroes in row 2,
+# #nonzeroes in row 3,...,
+# #nonzeroes in row (#rows-1),#nonzeroes in last row],
+# [(column of each nonzero) - 1],
+# [the nonzeroes]
+# ]
+#
+#
+#
+#
+
+#
+#  write out the data
+#
+
+# the LPCC code assumes a problem is in the form:
+#   min  c^Tx  +  d^Ty
+#   st    Ax   +  By  >=  f
+#        0 <= y \perp q + Nx + My >= 0
+#        x >= 0
+# with variables x,y and parameters c,d,f,q,A,B,N,M
+# c is an n-vector.
+# d is an m-vector.
+# f is a  k-vector.
+
+#For our problem format, the order of storage of the data
+#is as follows, in 29 lines:
+ 
+#line 1:  the three dimensions, "n,m,k":
+#[3(2n+m), m, 10n+5m]
+printf "[ %i, %i, %i ]\n",6*n+3*m,m,10*n+5*m > lpcc.txt;
+
+#line 2:  the vector "c":
+#[2(2n+m) zeroes then (2n+m) ones]
+printf "[" > lpcc.txt;
+for {i in 1..4*n+2*m} {
+  printf "0," > lpcc.txt;
+}
+for {i in 1..2*n+m-1} {
+  printf "1," > lpcc.txt;
+}
+printf "1 ]\n" > lpcc.txt;
+
+#display c,d;
+
+#line 3:  the vector "d":
+#[zeroes for the coeffs of lambda in objective function]
+printf "[" > lpcc.txt;
+for {i in 1..m-1} {
+  printf " 0," > lpcc.txt;
+}
+printf " 0 ]\n" > lpcc.txt;
+
+#line 4:  the vector "f":
+#[right hand sides for the 10n+5m constraints]
+printf "[" > lpcc.txt;
+for {i in 1..2*n} {
+  printf "%16.8e,",-ux > lpcc.txt;
+}
+for {i in 1..2*m} {
+  printf "%16.8e,",-ub > lpcc.txt;
+}
+for {i in 1..2*n} {
+  printf "%16.8e,",-uc > lpcc.txt;
+}
+for {i in 1..n} {
+  printf "%16.8e,",xbar[i] > lpcc.txt;
+}
+for {i in 1..n} {
+  printf "%16.8e,",-xbar[i] > lpcc.txt;
+}
+for {i in 1..m} {
+  printf "%16.8e,",bbar[i] > lpcc.txt;
+}
+for {i in 1..m} {
+  printf "%16.8e,",-bbar[i] > lpcc.txt;
+}
+for {i in 1..n} {
+  printf "%16.8e,",cbar[i] > lpcc.txt;
+}
+for {i in 1..n} {
+  printf "%16.8e,",-cbar[i] > lpcc.txt;
+}
+for {i in 1..m} {
+  printf "%16.8e,",-ulambda > lpcc.txt;
+}
+for {i in 1..2*n-1} {
+  printf " 0," > lpcc.txt;
+}
+printf " 0 ]\n" > lpcc.txt;
+
+#display b,u;
+
+#line 5:  the vector "q":
+#[m-vector of zeroes]
+printf "[" > lpcc.txt;
+for {i in 1..m-1} {
+  printf " 0," > lpcc.txt;
+}
+printf " 0 ]\n" > lpcc.txt;
+
+#display g;
+
+#lines 6-11:  matrix "A":
+# 10n+5m constraints:
+#  simple bounds, then define the z vars, then lambda bound, then
+#  gradient constraint with both signs.
+#[
+#[#rows,#cols,#nnz],
+#[cumulative sum of nonzeroes
+#in the rows, with an extra 0 at the beginning, and no entry for
+#the final row],
+#[the numbers of nonzeroes in each row],
+#[(column entry of each nonzero) - 1],
+#[actual nonzero values]
+#]
+printf "[[ %i, %i, %i ],\n",10*n+5*m,6*n+3*m,20*n+8*m+4*card(Qnnz) > lpcc.txt;
+
+printf "[0," > lpcc.txt;
+for {i in 1..4*n+2*m} {
+  printf " %i,",i > lpcc.txt;
+}
+for {i in 1..4*n+2*m} {
+  printf " %i,",4*n+2*m+3*i > lpcc.txt;
+}
+let nzcount := 16*n+8*m;
+for {i in 1..m} {
+  printf " %i,",nzcount > lpcc.txt;
+}
+for {i in 1..n} {
+  let nzcount := nzcount+2*Qrowcount[i]+2;
+  printf " %i,",nzcount > lpcc.txt;
+}
+let nzcount := 18*n+8*m+2*card(Qnnz);
+for {i in 1..n-2} {
+  let nzcount := nzcount+2*Qrowcount[i]+2;
+  printf " %i,",nzcount > lpcc.txt;
+}
+let nzcount := nzcount+2*Qrowcount[n-1]+2;
+printf " %i ",nzcount > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+printf "[" > lpcc.txt;
+for {i in 1..4*n+2*m} {
+  printf " 1," > lpcc.txt;
+}
+for {i in 1..4*n+2*m} {
+  printf " 3," > lpcc.txt;
+}
+for {i in 1..m} {
+  printf " 0," > lpcc.txt;
+}
+for {i in 1..n} {
+  printf " %i,",2*Qrowcount[i]+2 > lpcc.txt;
+}
+for {i in 1..n-1} {
+  printf " %i,",2*Qrowcount[i]+2 > lpcc.txt;
+}
+printf " %i ",2*Qrowcount[n]+2 > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+# columns of nonzeroes, listed row-by-row
+printf "[" > lpcc.txt;
+# first the simple bounds
+for {i in 0..2*n-1} {
+  printf " %i,",i > lpcc.txt;
+}
+for {i in 0..2*m-1} {
+  printf " %i,",2*n+i > lpcc.txt;
+}
+for {i in 0..2*n-1} {
+  printf " %i,",2*m+2*n+i > lpcc.txt;
+}
+# now the defining z constraints
+for {i in 0..n-1} {
+  printf " %i,",i > lpcc.txt;
+  printf " %i,",n+i > lpcc.txt;
+  printf " %i,",4*n+2*m+i > lpcc.txt;
+}
+for {i in 0..n-1} {
+  printf " %i,",i > lpcc.txt;
+  printf " %i,",n+i > lpcc.txt;
+  printf " %i,",4*n+2*m+i > lpcc.txt;
+}
+for {i in 0..m-1} {
+  printf " %i,",2*n+i > lpcc.txt;
+  printf " %i,",2*n+m+i > lpcc.txt;
+  printf " %i,",5*n+2*m+i > lpcc.txt;
+}
+for {i in 0..m-1} {
+  printf " %i,",2*n+i > lpcc.txt;
+  printf " %i,",2*n+m+i > lpcc.txt;
+  printf " %i,",5*n+2*m+i > lpcc.txt;
+}
+for {i in 0..n-1} {
+  printf " %i,",2*n+2*m+i > lpcc.txt;
+  printf " %i,",3*n+2*m+i > lpcc.txt;
+  printf " %i,",5*n+3*m+i > lpcc.txt;
+}
+for {i in 0..n-1} {
+  printf " %i,",2*n+2*m+i > lpcc.txt;
+  printf " %i,",3*n+2*m+i > lpcc.txt;
+  printf " %i,",5*n+3*m+i > lpcc.txt;
+}
+# now the gradient condition
+for {i in 1..n} {
+   for {j in 1..n : (i,j) in Qnnz} {
+      printf " %i,",j-1 > lpcc.txt;
+      printf " %i,",n+j-1 > lpcc.txt;
+   }
+   printf " %i,",2*n+2*m+i-1 > lpcc.txt;
+   printf " %i,",3*n+2*m+i-1 > lpcc.txt;
+}
+for {i in 1..n-1} {
+   for {j in 1..n : (i,j) in Qnnz} {
+      printf " %i,",j-1 > lpcc.txt;
+      printf " %i,",n+j-1 > lpcc.txt;
+   }
+   printf " %i,",2*n+2*m+i-1 > lpcc.txt;
+   printf " %i,",3*n+2*m+i-1 > lpcc.txt;
+}
+for {j in 1..n : (n,j) in Qnnz} {
+   printf " %i,",j-1 > lpcc.txt;
+   printf " %i,",n+j-1 > lpcc.txt;
+}
+printf " %i,",3*n+2*m-1 > lpcc.txt;
+printf " %i",4*n+2*m-1 > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+# values of nonzeroes
+printf "[" > lpcc.txt;
+# first the simple bounds
+for {i in 0..4*n+2*m-1} { 
+  printf " -1," > lpcc.txt;
+}
+# now the defining z constraints
+for {i in 0..n-1} { 
+  printf " 1, -1, 1," > lpcc.txt;
+}
+for {i in 0..n-1} { 
+  printf " -1, 1, 1," > lpcc.txt;
+}
+for {i in 0..m-1} { 
+  printf " 1, -1, 1," > lpcc.txt;
+}
+for {i in 0..m-1} { 
+  printf " -1, 1, 1," > lpcc.txt;
+}
+for {i in 0..n-1} {
+  printf " 1, -1, 1," > lpcc.txt;
+}
+for {i in 0..n-1} {
+  printf " -1, 1, 1," > lpcc.txt;
+}
+# now the gradient condition
+for {i in 1..n} {
+   for {j in 1..n : (i,j) in Qnnz} {
+      printf " %16.8e, %16.8e,",Q[i,j],-Q[i,j] > lpcc.txt;
+   }
+   printf " 1, -1," > lpcc.txt;
+}
+for {i in 1..n-1} {
+   for {j in 1..n : (i,j) in Qnnz} {
+      printf " %16.8e, %16.8e,",-Q[i,j],Q[i,j] > lpcc.txt;
+   }
+   printf " -1, 1," > lpcc.txt;
+}
+for {j in 1..n : (n,j) in Qnnz} {
+   printf " %16.8e, %16.8e,",-Q[n,j],Q[n,j] > lpcc.txt;
+}
+printf " -1, 1" > lpcc.txt;
+printf "]]\n" > lpcc.txt;
+
+#display A,B,Q;
+
+#lines 12-17:  matrix "B":
+# m upper bound constraints on lambda, plus the gradient constraints:
+#  lambda doesn't appear in first 8n+4m constraints
+#[
+#[#rows,#cols,#nnz],
+#[cumulative sum of nonzeroes
+#in the rows, with an extra 0 at the beginning, and no entry for
+#the final row],
+#[the numbers of nonzeroes in each row],
+#[(column entry of each nonzero) - 1],
+#[actual nonzero values]
+#]
+printf "[[ %i, %i, %i ],\n",10*n+5*m,m,m+2*card(Annz) > lpcc.txt;
+
+printf "[0," > lpcc.txt;  # cumulative row sums
+for {i in 1..8*n+4*m} {
+  printf " 0," > lpcc.txt;
+}
+for {i in 1..m} {
+  printf " %i,",i > lpcc.txt;
+}
+let nzcount := m;
+for {i in 1..n} {
+  let nzcount := nzcount+Acolcount[i];
+  printf " %i,",nzcount > lpcc.txt;
+}
+let nzcount := m+card(Annz);
+for {i in 1..n-2} {
+  let nzcount := nzcount+Acolcount[i];
+  printf " %i,",nzcount > lpcc.txt;
+}
+let nzcount := nzcount+Acolcount[n-1];
+printf " %i ",nzcount > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+printf "[" > lpcc.txt;  # individual row counts
+for {i in 1..8*n+4*m} {
+  printf " 0," > lpcc.txt;
+}
+for {i in 1..m} {
+  printf " 1," > lpcc.txt;
+}
+for {i in 1..n} {
+  printf " %i,",Acolcount[i] > lpcc.txt;
+}
+let nzcount := m+card(Annz);
+for {i in 1..n-1} {
+  printf " %i,",Acolcount[i] > lpcc.txt;
+}
+printf " %i",Acolcount[n] > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+# columns of nonzeroes
+printf "[" > lpcc.txt;
+for {i in 0..m-1} {
+  printf " %i,",i > lpcc.txt;
+}
+# now the gradient condition
+for {j in 1..n} {
+   for {i in 1..m : (i,j) in Annz} {
+      printf " %i,",i-1 > lpcc.txt;
+   }
+}
+for {j in 1..n-1} {
+   for {i in 1..m : (i,j) in Annz} {
+      printf " %i,",i-1 > lpcc.txt;
+   }
+}
+let nzcount := 0;
+for {i in 1..m : (i,n) in Annz} {
+   printf " %i",i-1 > lpcc.txt;
+   let nzcount := nzcount+1;
+   if nzcount < Acolcount[n] then {
+     printf "," > lpcc.txt;
+   }
+}
+printf "],\n" > lpcc.txt;
+
+# values of nonzeroes
+printf "[" > lpcc.txt;
+for {i in 0..m-1} {
+  printf " -1," > lpcc.txt;
+}
+# now the gradient condition
+for {j in 1..n} {
+   for {i in 1..m : (i,j) in Annz} {
+      printf " %16.8e,",-A[i,j] > lpcc.txt;
+   }
+}
+for {j in 1..n-1} {
+   for {i in 1..m : (i,j) in Annz} {
+      printf " %16.8e,",A[i,j] > lpcc.txt;
+   }
+}
+let nzcount := 0;
+for {i in 1..m : (i,n) in Annz} {
+   printf " %16.8e",A[i,n] > lpcc.txt;
+   let nzcount := nzcount+1;
+   if nzcount < Acolcount[n] then {
+     printf "," > lpcc.txt;
+   }
+}
+printf "]]\n" > lpcc.txt;
+
+#display H;
+
+#lines 18-23:  matrix "N":
+#[
+#[#rows,#cols,#nnz],
+#[cumulative sum of nonzeroes
+#in the rows, with an extra 0 at the beginning, and no entry for
+#the final row],
+#[the numbers of nonzeroes in each row],
+#[(column entry of each nonzero) - 1],
+#[actual nonzero values]
+#]
+printf "[[ %i, %i, %i ],\n",m,6*n+3*m,2*card(Annz)+2*m > lpcc.txt;
+
+printf "[0," > lpcc.txt;   # cumulative row counts
+let nzcount := 0;
+for {i in 1..m-2} {
+  let nzcount := nzcount + 2*Arowcount[i]+2;
+  printf " %i,",nzcount > lpcc.txt;
+}
+let nzcount := nzcount + 2*Arowcount[m-1]+2;
+printf " %i ",nzcount > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+printf "[" > lpcc.txt;  # individual row counts
+for {i in 1..m-1} {
+  printf " %i,",2*Arowcount[i]+2 > lpcc.txt;
+}
+printf " %i",2*Arowcount[m]+2 > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+# columns of nonzeroes
+printf "[" > lpcc.txt;
+for {i in 1..m-1} {
+ for {j in 1..n : (i,j) in Annz} {
+  printf " %i, %i,",j-1, n+j-1 > lpcc.txt;
+ }
+ printf " %i, %i,",2*n+i-1, 2*n+m+i-1 > lpcc.txt;
+}
+for {j in 1..n : (m,j) in Annz} {
+  printf " %i, %i,",j-1, n+j-1 > lpcc.txt;
+}
+printf " %i, %i",2*n+m-1, 2*n+2*m-1 > lpcc.txt;
+printf "],\n" > lpcc.txt;
+
+# values of nonzeroes
+printf "[" > lpcc.txt;
+for {i in 1..m-1} {
+ for {j in 1..n : (i,j) in Annz} {
+  printf " %16.8e, %16.8e,",A[i,j],-A[i,j] > lpcc.txt;
+ }
+ printf " -1, 1," > lpcc.txt;
+}
+for {j in 1..n : (m,j) in Annz} {
+  printf " %16.8e, %16.8e,",A[m,j],-A[m,j] > lpcc.txt;
+}
+printf " -1, 1" > lpcc.txt;
+printf "]]\n" > lpcc.txt;
+
+#lines 24-29:  matrix "M":
+#this matrix is empty
+#put a dummy zero in the first position of the last constraint
+#[
+#[#rows,#cols,#nnz],
+#[cumulative sum of nonzeroes
+#in the rows, with an extra 0 at the beginning, and no entry for
+#the final row],
+#[the numbers of nonzeroes in each row],
+#[(column entry of each nonzero) - 1],
+#[actual nonzero values]
+#]
+printf "[[ %i, %i, %i ],\n",m,m,1 > lpcc.txt;
+
+printf "[0," > lpcc.txt;
+for {i in 1..m-2} {
+  printf " 0," > lpcc.txt;
+}
+printf " 0],\n" > lpcc.txt;
+
+printf "[0," > lpcc.txt;
+for {i in 1..m-2} {
+  printf " 0," > lpcc.txt;
+}
+printf " 1],\n" > lpcc.txt;
+
+printf "[0],\n" > lpcc.txt;
+printf "[0]]\n" > lpcc.txt;
+
+#
+#  now solve the LPCC
+#    note: it appears cplex doesn't handle the cmpl omplements syntax.
+#
+
+#solve LPCC;
+
+option cplex_options 'mipdisplay=2 mipgap=1e-6 time=3600 threads=1';
+
+display _total_solve_elapsed_time;

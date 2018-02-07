@@ -1,0 +1,118 @@
+# param r default 0;
+
+#
+
+let  nz10 := min(10,n-1);
+
+# randomly generate the entries in A
+repeat while card(Annz) < nz10*m {
+   let row := floor(Uniform(1,m+1));
+   let col := floor(Uniform(1,n+1));
+   let Annz := Annz union {(row,col)};
+   let A[row,col] := Uniform01();
+}
+
+# calculate the sums of the absolute values in each row of A
+for {i in 1..m} {
+  let Arowsum[i] := 0;
+  let Arowcount[i] := 0;
+  for {j in 1..n} {
+    if (i,j) in Annz then {
+      let Arowsum[i] := Arowsum[i] + abs(A[i,j]);
+      let Arowcount[i] := Arowcount[i] + 1;
+    }
+  }
+}
+
+# calculate the number of entries in each column of A
+for {j in 1..n} {
+  let Acolcount[j] := 0;
+  for {i in 1..m} {
+    if (i,j) in Annz then {
+      let Acolcount[j] := Acolcount[j] + 1;
+    }
+  }
+}
+
+# randomly generate the entries in M
+# generate rows one at a time, with 3 entries per row
+# having 3 entries per row in M gives approximately 9 entries
+# in each row of Q, including the diagonal entry:
+# approx (1-2/n)(1-3/n)(1-3/n) off-diagonal entries per row.
+for {i in 1..n} {
+   let Mnnz := Mnnz union {(i,i)};
+   let M[i,i] := 0.5+0.5*Uniform01();
+   let count := 0; # only really needed for small n:
+                   # with n=2 or 3, prob a particular column is never
+                   # generated is smaller than 10^{-10}.
+   repeat while (card({j in 1..n : (i,j) in Mnnz}) < 3 and count < 20*n) {
+      let col := floor(Uniform(1,n+1));
+      let Mnnz := Mnnz union {(i,col)};
+      let M[i,col] := Uniform01();
+      let count := count+1;
+   }
+}
+
+# calculate Q=MM^T
+for {r in 1..n} {
+   let Qnnz := Qnnz union {(r,r)};
+   let Q[r,r] := sum{p in 1..n : (r,p) in Mnnz} M[r,p]*M[r,p];
+   for {j in r+1..n} {
+      let nnnz := sum{ p in 1..n : (r,p) in Mnnz and (j,p) in Mnnz} 1;
+      if nnnz > 0.5 then {
+        let Qnnz := Qnnz union {(r,j)} union {(j,r)};
+        let Q[r,j] :=
+          sum{ p in 1..n : (r,p) in Mnnz and (j,p) in Mnnz} M[r,p]*M[j,p];
+        let Q[j,r] := Q[r,j];
+      }
+   }
+}
+
+# calculate the number of entries in each row of Q
+for {i in 1..n} {
+  let Qrowcount[i] := 0;
+  for {j in 1..n} {
+    if (i,j) in Qnnz then {
+      let Qrowcount[i] := Qrowcount[i] + 1;
+    }
+  }
+}
+
+# calculate bbar := A xbb - wbb + perturbation:
+for {r in 1..m} {
+   let bbb[r] := -wbb[r] + sum{j in 1..n : (r,j) in Annz} A[r,j] * xbb[j];
+   let bbar[r] := bbb[r] + Normal(0,1);
+}
+
+# calculate cbar := A^T lambdabb - Q xbb + perturbation:
+for {i in 1..n} {
+   let cbb[i] := sum{j in 1..m : (j,i) in Annz} A[j,i] * lambdabb[j]
+         - sum{j in 1..m : (i,j) in Qnnz} Q[i,j] * xbb[j];
+   let cbar[i] := cbb[i] + Normal(0,1);
+}
+
+# calculate upper bounds
+let ux := abs(xbb[1]);
+for {i in 2..n} {
+   let ux := max(ux,abs(xbb[i]));
+}
+let ux := 10*ux;
+
+let ub := abs(bbb[1]);
+for {i in 2..m} {
+   let ub := max(ub,abs(bbb[i]));
+}
+let ub := 10*ub;
+
+let uc := abs(cbb[1]);
+for {i in 2..n} {
+   let uc := max(uc,abs(cbb[i]));
+}
+let uc := 10*uc;
+
+let ulambda := abs(lambdabar[1]);
+for {i in 2..m} {
+   let ulambda := max(ulambda,abs(lambdabar[i]));
+}
+let ulambda := 10*ulambda;
+

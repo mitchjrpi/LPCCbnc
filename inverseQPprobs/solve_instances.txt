@@ -1,0 +1,176 @@
+
+/bin/cp instances/sizes100_75a.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes100_75a_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes100_75a_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes100_75a_lpcc_out.txt
+
+/bin/cp instances/sizes100_75b.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes100_75b_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes100_75b_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes100_75b_lpcc_out.txt
+
+/bin/cp instances/sizes100_75c.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes100_75c_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes100_75c_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes100_75c_lpcc_out.txt
+
+/bin/cp instances/sizes100_75d.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes100_75d_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes100_75d_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes100_75d_lpcc_out.txt
+
+/bin/cp instances/sizes100_75e.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes100_75e_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes100_75e_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes100_75e_lpcc_out.txt
+
+/bin/cp instances/sizes120_90a.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes120_90a_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes120_90a_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes120_90a_lpcc_out.txt
+
+/bin/cp instances/sizes120_90b.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes120_90b_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes120_90b_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes120_90b_lpcc_out.txt
+
+/bin/cp instances/sizes120_90c.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes120_90c_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes120_90c_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes120_90c_lpcc_out.txt
+
+/bin/cp instances/sizes120_90d.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes120_90d_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes120_90d_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes120_90d_lpcc_out.txt
+
+/bin/cp instances/sizes120_90e.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes120_90e_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes120_90e_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes120_90e_lpcc_out.txt
+
+/bin/cp instances/sizes150_20a.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes150_20a_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes150_20a_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes150_20a_lpcc_out.txt
+
+/bin/cp instances/sizes150_20b.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes150_20b_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes150_20b_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes150_20b_lpcc_out.txt
+
+/bin/cp instances/sizes150_20c.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes150_20c_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes150_20c_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes150_20c_lpcc_out.txt
+
+/bin/cp instances/sizes150_20d.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes150_20d_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes150_20d_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes150_20d_lpcc_out.txt
+
+/bin/cp instances/sizes150_20e.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes150_20e_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes150_20e_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes150_20e_lpcc_out.txt
+
+/bin/cp instances/sizes200_15a.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes200_15a_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes200_15a_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes200_15a_lpcc_out.txt
+
+/bin/cp instances/sizes200_15b.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes200_15b_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes200_15b_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes200_15b_lpcc_out.txt
+
+/bin/cp instances/sizes200_15c.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes200_15c_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes200_15c_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes200_15c_lpcc_out.txt
+
+/bin/cp instances/sizes200_15d.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes200_15d_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes200_15d_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes200_15d_lpcc_out.txt
+
+/bin/cp instances/sizes200_15e.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes200_15e_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes200_15e_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes200_15e_lpcc_out.txt
+
+/bin/cp instances/sizes400_5a.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes400_5a_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes400_5a_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes400_5a_lpcc_out.txt
+
+/bin/cp instances/sizes400_5b.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes400_5b_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes400_5b_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes400_5b_lpcc_out.txt
+
+/bin/cp instances/sizes400_5c.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes400_5c_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes400_5c_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes400_5c_lpcc_out.txt
+
+/bin/cp instances/sizes400_5d.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes400_5d_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes400_5d_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes400_5d_lpcc_out.txt
+
+/bin/cp instances/sizes400_5e.mod sizes.mod
+ampl < gsm.txt > solveMIP.out
+mv solveMIP.out instances/sizes400_5e_MIPout.txt
+LPCCnpc -m b -f 3 lpcc.txt > lpccscreen.out
+mv lpccscreen.out instances/sizes400_5e_lpcc_screen.txt
+mv lpcc.txt.out instances/sizes400_5e_lpcc_out.txt
+

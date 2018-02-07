@@ -1,0 +1,302 @@
+spline-34:inverseQPprobs mitchj$ LPCCnpc -m b -f 3 sizes120_90e_lpcc.txt 
+Reading inputdata...
+Setup LPCC problem...
+Start solving...
+Preprocessing...
+ LPCC relaxation: 33.681226
+ Feasibility recovery...
+	Find a feasible solution with objective:107.609078 by directly rounding
+	Feasibility recovery refinement...
+		Search range  33.681226 - 70.645152
+		Search range  70.645152 - 89.127115
+		Search range  89.127115 - 98.368097
+	Find a feasible solution with objective:95.518098
+		Search range  89.127115 - 92.322607
+	Find a feasible solution with objective:92.162109
+		Search range  89.127115 - 90.644612
+		Search range  90.644612 - 91.403361
+	Find a feasible solution with objective:91.296458 by directly rounding
+	Final find the best ub: 91.296458
+	Total feasibility recovery time:       50.899
+ Add disjunctive cut at root node...(loop=12)
+	Total time for generating cuts:        9.655s
+	After adding 0 disjunctive cuts, improved lp relaxation is 33.681226
+ Add simple cuts at root node...(loop=12)
+	Total time for generating cuts:        0.001
+	After adding 0 simple cuts, improved lp relaxation is 33.681226
+ Add bound cut at root node...(p=1, loop=3)
+	Total time for generating cuts:        0.000
+	After adding 0 bound cuts, improved lp relaxation is 0.000000
+ Initial subproblem generated: 1
+ terminating status in preprocess 0
+ Total preprocessing time: 60.588358
+ Total preprocessing wall clock time: 53
+mod500: LB:      33.6812 UB:     91.2965 EN:        0 LN:       0 PT:      0s
+mod500: LB:      67.7618 UB:     91.2965 EN:      500 LN:     250 PT:     33s
+mod500: LB:      71.2611 UB:     91.2965 EN:     1000 LN:     499 PT:     47s
+mod500: LB:      73.0382 UB:     91.2965 EN:     1500 LN:     749 PT:     56s
+mod500: LB:      74.3299 UB:     91.2965 EN:     2000 LN:     999 PT:     66s
+mod500: LB:      75.3585 UB:     91.2965 EN:     2500 LN:    1247 PT:     75s
+mod500: LB:      76.2466 UB:     91.2965 EN:     3000 LN:    1497 PT:     81s
+mod500: LB:      76.8931 UB:     91.2965 EN:     3500 LN:    1741 PT:     88s
+mod500: LB:      77.4652 UB:     91.2965 EN:     4000 LN:    1988 PT:     94s
+mod500: LB:      77.9925 UB:     91.2965 EN:     4500 LN:    2235 PT:    100s
+mod500: LB:      78.4481 UB:     91.2965 EN:     5000 LN:    2485 PT:    107s
+mod500: LB:      78.8436 UB:     91.2965 EN:     5500 LN:    2727 PT:    113s
+mod500: LB:      79.2363 UB:     91.2965 EN:     6000 LN:    2964 PT:    119s
+mod500: LB:      79.5790 UB:     91.2965 EN:     6500 LN:    3204 PT:    125s
+mod500: LB:      79.8900 UB:     91.2965 EN:     7000 LN:    3442 PT:    131s
+mod500: LB:      80.2064 UB:     91.2965 EN:     7500 LN:    3672 PT:    138s
+mod500: LB:      80.5124 UB:     91.2965 EN:     8000 LN:    3904 PT:    144s
+mod500: LB:      80.7554 UB:     91.2965 EN:     8500 LN:    4132 PT:    150s
+mod500: LB:      80.9985 UB:     91.2965 EN:     9000 LN:    4351 PT:    155s
+mod500: LB:      81.2330 UB:     91.2965 EN:     9500 LN:    4570 PT:    161s
+mod500: LB:      81.4590 UB:     91.2965 EN:    10000 LN:    4797 PT:    167s
+mod500: LB:      81.6610 UB:     91.2965 EN:    10500 LN:    4999 PT:    172s
+mod500: LB:      81.8801 UB:     91.2965 EN:    11000 LN:    5208 PT:    178s
+mod500: LB:      82.0702 UB:     91.2965 EN:    11500 LN:    5413 PT:    183s
+mod500: LB:      82.2577 UB:     91.2965 EN:    12000 LN:    5624 PT:    189s
+mod500: LB:      82.4277 UB:     91.2965 EN:    12500 LN:    5833 PT:    194s
+mod500: LB:      82.6078 UB:     91.2965 EN:    13000 LN:    6041 PT:    200s
+mod500: LB:      82.7512 UB:     91.2965 EN:    13500 LN:    6242 PT:    205s
+mod500: LB:      82.9164 UB:     91.2965 EN:    14000 LN:    6439 PT:    211s
+mod500: LB:      83.0541 UB:     91.2965 EN:    14500 LN:    6638 PT:    217s
+mod500: LB:      83.1902 UB:     91.2965 EN:    15000 LN:    6833 PT:    222s
+mod500: LB:      83.3275 UB:     91.2965 EN:    15500 LN:    7003 PT:    228s
+mod500: LB:      83.4492 UB:     91.2965 EN:    16000 LN:    7195 PT:    233s
+mod500: LB:      83.5622 UB:     91.2965 EN:    16500 LN:    7382 PT:    238s
+mod500: LB:      83.6807 UB:     91.2965 EN:    17000 LN:    7557 PT:    244s
+mod500: LB:      83.7967 UB:     91.2965 EN:    17500 LN:    7741 PT:    249s
+mod500: LB:      83.9152 UB:     91.2965 EN:    18000 LN:    7921 PT:    254s
+mod500: LB:      84.0273 UB:     91.2965 EN:    18500 LN:    8088 PT:    260s
+mod500: LB:      84.1352 UB:     91.2965 EN:    19000 LN:    8267 PT:    265s
+mod500: LB:      84.2444 UB:     91.2965 EN:    19500 LN:    8427 PT:    270s
+mod500: LB:      84.3546 UB:     91.2965 EN:    20000 LN:    8607 PT:    276s
+mod500: LB:      84.4713 UB:     91.2965 EN:    20500 LN:    8760 PT:    281s
+mod500: LB:      84.5584 UB:     91.2965 EN:    21000 LN:    8927 PT:    286s
+mod500: LB:      84.6601 UB:     91.2965 EN:    21500 LN:    9091 PT:    291s
+mod500: LB:      84.7496 UB:     91.2965 EN:    22000 LN:    9246 PT:    297s
+mod500: LB:      84.8399 UB:     91.2965 EN:    22500 LN:    9393 PT:    302s
+mod500: LB:      84.9239 UB:     91.2965 EN:    23000 LN:    9542 PT:    307s
+mod500: LB:      85.0134 UB:     91.2965 EN:    23500 LN:    9688 PT:    312s
+mod500: LB:      85.0955 UB:     91.2965 EN:    24000 LN:    9825 PT:    317s
+mod500: LB:      85.1855 UB:     91.2965 EN:    24500 LN:    9957 PT:    322s
+mod500: LB:      85.2636 UB:     91.2965 EN:    25000 LN:   10091 PT:    328s
+mod500: LB:      85.3414 UB:     91.2965 EN:    25500 LN:   10222 PT:    332s
+mod500: LB:      85.4104 UB:     91.2965 EN:    26000 LN:   10332 PT:    338s
+mod500: LB:      85.4882 UB:     91.2965 EN:    26500 LN:   10456 PT:    343s
+mod500: LB:      85.5582 UB:     91.2965 EN:    27000 LN:   10582 PT:    348s
+mod500: LB:      85.6265 UB:     91.2965 EN:    27500 LN:   10699 PT:    353s
+mod500: LB:      85.7084 UB:     91.2965 EN:    28000 LN:   10833 PT:    358s
+mod500: LB:      85.7786 UB:     91.2965 EN:    28500 LN:   10943 PT:    363s
+mod500: LB:      85.8445 UB:     91.2965 EN:    29000 LN:   11066 PT:    368s
+mod500: LB:      85.9083 UB:     91.2965 EN:    29500 LN:   11179 PT:    373s
+mod500: LB:      85.9730 UB:     91.2965 EN:    30000 LN:   11305 PT:    378s
+mod500: LB:      86.0402 UB:     91.2965 EN:    30500 LN:   11415 PT:    383s
+mod500: LB:      86.1045 UB:     91.2965 EN:    31000 LN:   11530 PT:    388s
+mod500: LB:      86.1669 UB:     91.2965 EN:    31500 LN:   11645 PT:    393s
+mod500: LB:      86.2345 UB:     91.2965 EN:    32000 LN:   11747 PT:    398s
+mod500: LB:      86.2945 UB:     91.2965 EN:    32500 LN:   11851 PT:    403s
+mod500: LB:      86.3553 UB:     91.2965 EN:    33000 LN:   11954 PT:    408s
+mod500: LB:      86.4127 UB:     91.2965 EN:    33500 LN:   12070 PT:    413s
+mod500: LB:      86.4701 UB:     91.2965 EN:    34000 LN:   12172 PT:    417s
+mod500: LB:      86.5256 UB:     91.2965 EN:    34500 LN:   12282 PT:    422s
+mod500: LB:      86.5779 UB:     91.2965 EN:    35000 LN:   12368 PT:    427s
+mod500: LB:      86.6301 UB:     91.2965 EN:    35500 LN:   12472 PT:    432s
+mod500: LB:      86.6891 UB:     91.2965 EN:    36000 LN:   12566 PT:    437s
+mod500: LB:      86.7484 UB:     91.2965 EN:    36500 LN:   12664 PT:    442s
+mod500: LB:      86.8004 UB:     91.2965 EN:    37000 LN:   12746 PT:    446s
+mod500: LB:      86.8548 UB:     91.2965 EN:    37500 LN:   12840 PT:    451s
+mod500: LB:      86.9038 UB:     91.2965 EN:    38000 LN:   12923 PT:    456s
+mod500: LB:      86.9540 UB:     91.2965 EN:    38500 LN:   13003 PT:    461s
+mod500: LB:      87.0059 UB:     91.2965 EN:    39000 LN:   13087 PT:    465s
+mod500: LB:      87.0551 UB:     91.2965 EN:    39500 LN:   13189 PT:    470s
+mod500: LB:      87.1056 UB:     91.2965 EN:    40000 LN:   13286 PT:    475s
+mod500: LB:      87.1504 UB:     91.2965 EN:    40500 LN:   13359 PT:    479s
+mod500: LB:      87.2009 UB:     91.2965 EN:    41000 LN:   13421 PT:    484s
+mod500: LB:      87.2509 UB:     91.2965 EN:    41500 LN:   13494 PT:    489s
+mod500: LB:      87.2952 UB:     91.2965 EN:    42000 LN:   13565 PT:    493s
+mod500: LB:      87.3385 UB:     91.2965 EN:    42500 LN:   13632 PT:    498s
+mod500: LB:      87.3843 UB:     91.2965 EN:    43000 LN:   13695 PT:    502s
+mod500: LB:      87.4295 UB:     91.2965 EN:    43500 LN:   13757 PT:    507s
+mod500: LB:      87.4686 UB:     91.2965 EN:    44000 LN:   13827 PT:    512s
+mod500: LB:      87.5134 UB:     91.2965 EN:    44500 LN:   13895 PT:    516s
+mod500: LB:      87.5572 UB:     91.2965 EN:    45000 LN:   13963 PT:    521s
+mod500: LB:      87.5993 UB:     91.2965 EN:    45500 LN:   14022 PT:    526s
+mod500: LB:      87.6388 UB:     91.2965 EN:    46000 LN:   14095 PT:    530s
+mod500: LB:      87.6793 UB:     91.2965 EN:    46500 LN:   14166 PT:    535s
+mod500: LB:      87.7243 UB:     91.2965 EN:    47000 LN:   14216 PT:    539s
+mod500: LB:      87.7596 UB:     91.2965 EN:    47500 LN:   14270 PT:    544s
+mod500: LB:      87.8017 UB:     91.2965 EN:    48000 LN:   14316 PT:    548s
+mod500: LB:      87.8431 UB:     91.2965 EN:    48500 LN:   14371 PT:    553s
+mod500: LB:      87.8821 UB:     91.2965 EN:    49000 LN:   14411 PT:    557s
+mod500: LB:      87.9237 UB:     91.2965 EN:    49500 LN:   14456 PT:    561s
+mod500: LB:      87.9637 UB:     91.2965 EN:    50000 LN:   14506 PT:    566s
+mod500: LB:      87.9983 UB:     91.2965 EN:    50500 LN:   14551 PT:    570s
+mod500: LB:      88.0329 UB:     91.2965 EN:    51000 LN:   14608 PT:    574s
+mod500: LB:      88.0669 UB:     91.2965 EN:    51500 LN:   14634 PT:    579s
+mod500: LB:      88.1026 UB:     91.2965 EN:    52000 LN:   14679 PT:    583s
+mod500: LB:      88.1402 UB:     91.2965 EN:    52500 LN:   14719 PT:    588s
+mod500: LB:      88.1731 UB:     91.2965 EN:    53000 LN:   14751 PT:    592s
+mod500: LB:      88.2059 UB:     91.2965 EN:    53500 LN:   14791 PT:    596s
+mod500: LB:      88.2411 UB:     91.2965 EN:    54000 LN:   14838 PT:    601s
+mod500: LB:      88.2741 UB:     91.2965 EN:    54500 LN:   14873 PT:    605s
+mod500: LB:      88.3083 UB:     91.2965 EN:    55000 LN:   14911 PT:    609s
+mod500: LB:      88.3440 UB:     91.2965 EN:    55500 LN:   14941 PT:    614s
+mod500: LB:      88.3759 UB:     91.2965 EN:    56000 LN:   14967 PT:    618s
+mod500: LB:      88.4072 UB:     91.2965 EN:    56500 LN:   14984 PT:    622s
+mod500: LB:      88.4414 UB:     91.2965 EN:    57000 LN:   15016 PT:    627s
+mod500: LB:      88.4748 UB:     91.2965 EN:    57500 LN:   15046 PT:    631s
+mod500: LB:      88.5100 UB:     91.2965 EN:    58000 LN:   15074 PT:    635s
+mod500: LB:      88.5406 UB:     91.2965 EN:    58500 LN:   15093 PT:    639s
+mod500: LB:      88.5705 UB:     91.2965 EN:    59000 LN:   15121 PT:    644s
+mod500: LB:      88.5990 UB:     91.2965 EN:    59500 LN:   15136 PT:    648s
+mod500: LB:      88.6330 UB:     91.2965 EN:    60000 LN:   15149 PT:    652s
+mod500: LB:      88.6620 UB:     91.2965 EN:    60500 LN:   15173 PT:    656s
+mod500: LB:      88.6921 UB:     91.2965 EN:    61000 LN:   15198 PT:    660s
+mod500: LB:      88.7225 UB:     91.2965 EN:    61500 LN:   15214 PT:    665s
+mod500: LB:      88.7504 UB:     91.2965 EN:    62000 LN:   15240 PT:    669s
+mod500: LB:      88.7802 UB:     91.2965 EN:    62500 LN:   15261 PT:    673s
+mod500: LB:      88.8082 UB:     91.2965 EN:    63000 LN:   15277 PT:    677s
+mod500: LB:      88.8380 UB:     91.2965 EN:    63500 LN:   15281 PT:    682s
+mod500: LB:      88.8672 UB:     91.2965 EN:    64000 LN:   15284 PT:    686s
+mod500: LB:      88.8974 UB:     91.2965 EN:    64500 LN:   15293 PT:    690s
+mod500: LB:      88.9256 UB:     91.2965 EN:    65000 LN:   15280 PT:    693s
+mod500: LB:      88.9558 UB:     91.2965 EN:    65500 LN:   15275 PT:    698s
+mod500: LB:      88.9820 UB:     91.2965 EN:    66000 LN:   15271 PT:    702s
+mod500: LB:      89.0078 UB:     91.2965 EN:    66500 LN:   15270 PT:    705s
+mod500: LB:      89.0328 UB:     91.2965 EN:    67000 LN:   15243 PT:    709s
+mod500: LB:      89.0578 UB:     91.2965 EN:    67500 LN:   15242 PT:    713s
+mod500: LB:      89.0863 UB:     91.2965 EN:    68000 LN:   15229 PT:    717s
+mod500: LB:      89.1106 UB:     91.2965 EN:    68500 LN:   15232 PT:    721s
+mod500: LB:      89.1356 UB:     91.2965 EN:    69000 LN:   15222 PT:    725s
+mod500: LB:      89.1642 UB:     91.2965 EN:    69500 LN:   15212 PT:    729s
+mod500: LB:      89.1888 UB:     91.2965 EN:    70000 LN:   15178 PT:    733s
+mod500: LB:      89.2149 UB:     91.2965 EN:    70500 LN:   15148 PT:    737s
+mod500: LB:      89.2427 UB:     91.2965 EN:    71000 LN:   15121 PT:    741s
+mod500: LB:      89.2703 UB:     91.2965 EN:    71500 LN:   15098 PT:    745s
+mod500: LB:      89.2930 UB:     91.2965 EN:    72000 LN:   15095 PT:    749s
+mod500: LB:      89.3199 UB:     91.2965 EN:    72500 LN:   15066 PT:    752s
+mod500: LB:      89.3442 UB:     91.2965 EN:    73000 LN:   15045 PT:    756s
+mod500: LB:      89.3684 UB:     91.2965 EN:    73500 LN:   15002 PT:    760s
+mod500: LB:      89.3935 UB:     91.2965 EN:    74000 LN:   14963 PT:    764s
+mod500: LB:      89.4173 UB:     91.2965 EN:    74500 LN:   14910 PT:    767s
+mod500: LB:      89.4416 UB:     91.2965 EN:    75000 LN:   14876 PT:    771s
+mod500: LB:      89.4642 UB:     91.2965 EN:    75500 LN:   14860 PT:    775s
+mod500: LB:      89.4873 UB:     91.2965 EN:    76000 LN:   14829 PT:    779s
+mod500: LB:      89.5094 UB:     91.2965 EN:    76500 LN:   14776 PT:    782s
+mod500: LB:      89.5316 UB:     91.2965 EN:    77000 LN:   14731 PT:    786s
+mod500: LB:      89.5526 UB:     91.2965 EN:    77500 LN:   14696 PT:    790s
+mod500: LB:      89.5754 UB:     91.2965 EN:    78000 LN:   14655 PT:    793s
+mod500: LB:      89.5985 UB:     91.2965 EN:    78500 LN:   14603 PT:    797s
+mod500: LB:      89.6195 UB:     91.2965 EN:    79000 LN:   14560 PT:    801s
+mod500: LB:      89.6437 UB:     91.2965 EN:    79500 LN:   14520 PT:    805s
+mod500: LB:      89.6645 UB:     91.2965 EN:    80000 LN:   14458 PT:    808s
+mod500: LB:      89.6846 UB:     91.2965 EN:    80500 LN:   14413 PT:    812s
+mod500: LB:      89.7048 UB:     91.2965 EN:    81000 LN:   14374 PT:    816s
+mod500: LB:      89.7256 UB:     91.2965 EN:    81500 LN:   14327 PT:    819s
+mod500: LB:      89.7482 UB:     91.2965 EN:    82000 LN:   14300 PT:    823s
+mod500: LB:      89.7687 UB:     91.2965 EN:    82500 LN:   14231 PT:    827s
+mod500: LB:      89.7909 UB:     91.2965 EN:    83000 LN:   14160 PT:    830s
+mod500: LB:      89.8111 UB:     91.2965 EN:    83500 LN:   14114 PT:    834s
+mod500: LB:      89.8323 UB:     91.2965 EN:    84000 LN:   14062 PT:    837s
+mod500: LB:      89.8552 UB:     91.2965 EN:    84500 LN:   14001 PT:    841s
+mod500: LB:      89.8728 UB:     91.2965 EN:    85000 LN:   13932 PT:    844s
+mod500: LB:      89.8932 UB:     91.2965 EN:    85500 LN:   13867 PT:    848s
+mod500: LB:      89.9150 UB:     91.2965 EN:    86000 LN:   13802 PT:    851s
+mod500: LB:      89.9340 UB:     91.2965 EN:    86500 LN:   13734 PT:    855s
+mod500: LB:      89.9560 UB:     91.2965 EN:    87000 LN:   13658 PT:    858s
+mod500: LB:      89.9792 UB:     91.2965 EN:    87500 LN:   13590 PT:    862s
+mod500: LB:      89.9978 UB:     91.2965 EN:    88000 LN:   13513 PT:    865s
+mod500: LB:      90.0184 UB:     91.2965 EN:    88500 LN:   13446 PT:    868s
+mod500: LB:      90.0392 UB:     91.2965 EN:    89000 LN:   13353 PT:    872s
+mod500: LB:      90.0593 UB:     91.2965 EN:    89500 LN:   13255 PT:    875s
+mod500: LB:      90.0780 UB:     91.2965 EN:    90000 LN:   13168 PT:    878s
+mod500: LB:      90.0960 UB:     91.2965 EN:    90500 LN:   13103 PT:    882s
+mod500: LB:      90.1158 UB:     91.2965 EN:    91000 LN:   13026 PT:    885s
+mod500: LB:      90.1353 UB:     91.2965 EN:    91500 LN:   12940 PT:    888s
+mod500: LB:      90.1536 UB:     91.2965 EN:    92000 LN:   12849 PT:    892s
+mod500: LB:      90.1720 UB:     91.2965 EN:    92500 LN:   12751 PT:    895s
+mod500: LB:      90.1900 UB:     91.2965 EN:    93000 LN:   12649 PT:    898s
+mod500: LB:      90.2078 UB:     91.2965 EN:    93500 LN:   12553 PT:    901s
+mod500: LB:      90.2254 UB:     91.2965 EN:    94000 LN:   12449 PT:    905s
+mod500: LB:      90.2418 UB:     91.2965 EN:    94500 LN:   12340 PT:    908s
+mod500: LB:      90.2583 UB:     91.2965 EN:    95000 LN:   12248 PT:    911s
+mod500: LB:      90.2779 UB:     91.2965 EN:    95500 LN:   12137 PT:    915s
+mod500: LB:      90.2961 UB:     91.2965 EN:    96000 LN:   12037 PT:    918s
+mod500: LB:      90.3128 UB:     91.2965 EN:    96500 LN:   11914 PT:    921s
+mod500: LB:      90.3294 UB:     91.2965 EN:    97000 LN:   11798 PT:    924s
+mod500: LB:      90.3463 UB:     91.2965 EN:    97500 LN:   11679 PT:    927s
+mod500: LB:      90.3654 UB:     91.2965 EN:    98000 LN:   11571 PT:    930s
+mod500: LB:      90.3840 UB:     91.2965 EN:    98500 LN:   11448 PT:    934s
+mod500: LB:      90.4008 UB:     91.2965 EN:    99000 LN:   11322 PT:    937s
+mod500: LB:      90.4174 UB:     91.2965 EN:    99500 LN:   11195 PT:    940s
+mod500: LB:      90.4354 UB:     91.2965 EN:   100000 LN:   11073 PT:    943s
+mod500: LB:      90.4531 UB:     91.2965 EN:   100500 LN:   10957 PT:    946s
+mod500: LB:      90.4705 UB:     91.2965 EN:   101000 LN:   10829 PT:    949s
+mod500: LB:      90.4877 UB:     91.2965 EN:   101500 LN:   10701 PT:    952s
+mod500: LB:      90.5036 UB:     91.2965 EN:   102000 LN:   10557 PT:    956s
+mod500: LB:      90.5233 UB:     91.2965 EN:   102500 LN:   10413 PT:    958s
+mod500: LB:      90.5392 UB:     91.2965 EN:   103000 LN:   10273 PT:    962s
+mod500: LB:      90.5560 UB:     91.2965 EN:   103500 LN:   10139 PT:    965s
+mod500: LB:      90.5735 UB:     91.2965 EN:   104000 LN:    9988 PT:    968s
+mod500: LB:      90.5896 UB:     91.2965 EN:   104500 LN:    9852 PT:    970s
+mod500: LB:      90.6063 UB:     91.2965 EN:   105000 LN:    9711 PT:    973s
+mod500: LB:      90.6228 UB:     91.2965 EN:   105500 LN:    9563 PT:    976s
+mod500: LB:      90.6383 UB:     91.2965 EN:   106000 LN:    9407 PT:    979s
+mod500: LB:      90.6546 UB:     91.2965 EN:   106500 LN:    9247 PT:    982s
+mod500: LB:      90.6698 UB:     91.2965 EN:   107000 LN:    9096 PT:    985s
+mod500: LB:      90.6840 UB:     91.2965 EN:   107500 LN:    8942 PT:    988s
+mod500: LB:      90.6999 UB:     91.2965 EN:   108000 LN:    8773 PT:    991s
+mod500: LB:      90.7159 UB:     91.2965 EN:   108500 LN:    8598 PT:    994s
+mod500: LB:      90.7305 UB:     91.2965 EN:   109000 LN:    8434 PT:    996s
+mod500: LB:      90.7458 UB:     91.2965 EN:   109500 LN:    8262 PT:    999s
+mod500: LB:      90.7606 UB:     91.2965 EN:   110000 LN:    8096 PT:   1002s
+mod500: LB:      90.7755 UB:     91.2965 EN:   110500 LN:    7930 PT:   1005s
+mod500: LB:      90.7899 UB:     91.2965 EN:   111000 LN:    7745 PT:   1008s
+mod500: LB:      90.8048 UB:     91.2965 EN:   111500 LN:    7571 PT:   1010s
+mod500: LB:      90.8224 UB:     91.2965 EN:   112000 LN:    7392 PT:   1013s
+mod500: LB:      90.8380 UB:     91.2965 EN:   112500 LN:    7215 PT:   1016s
+mod500: LB:      90.8529 UB:     91.2965 EN:   113000 LN:    7038 PT:   1018s
+mod500: LB:      90.8680 UB:     91.2965 EN:   113500 LN:    6842 PT:   1021s
+mod500: LB:      90.8835 UB:     91.2965 EN:   114000 LN:    6652 PT:   1024s
+mod500: LB:      90.8994 UB:     91.2965 EN:   114500 LN:    6467 PT:   1026s
+mod500: LB:      90.9137 UB:     91.2965 EN:   115000 LN:    6267 PT:   1029s
+mod500: LB:      90.9276 UB:     91.2965 EN:   115500 LN:    6067 PT:   1031s
+mod500: LB:      90.9421 UB:     91.2965 EN:   116000 LN:    5866 PT:   1034s
+mod500: LB:      90.9557 UB:     91.2965 EN:   116500 LN:    5668 PT:   1036s
+mod500: LB:      90.9702 UB:     91.2965 EN:   117000 LN:    5480 PT:   1039s
+mod500: LB:      90.9847 UB:     91.2965 EN:   117500 LN:    5276 PT:   1041s
+mod500: LB:      90.9985 UB:     91.2965 EN:   118000 LN:    5057 PT:   1044s
+mod500: LB:      91.0125 UB:     91.2965 EN:   118500 LN:    4857 PT:   1046s
+mod500: LB:      91.0274 UB:     91.2965 EN:   119000 LN:    4642 PT:   1049s
+mod500: LB:      91.0418 UB:     91.2965 EN:   119500 LN:    4419 PT:   1051s
+mod500: LB:      91.0565 UB:     91.2965 EN:   120000 LN:    4197 PT:   1054s
+mod500: LB:      91.0709 UB:     91.2965 EN:   120500 LN:    3976 PT:   1056s
+mod500: LB:      91.0843 UB:     91.2965 EN:   121000 LN:    3757 PT:   1058s
+mod500: LB:      91.0981 UB:     91.2965 EN:   121500 LN:    3544 PT:   1061s
+mod500: LB:      91.1124 UB:     91.2965 EN:   122000 LN:    3317 PT:   1063s
+mod500: LB:      91.1260 UB:     91.2965 EN:   122500 LN:    3083 PT:   1066s
+mod500: LB:      91.1411 UB:     91.2965 EN:   123000 LN:    2860 PT:   1068s
+mod500: LB:      91.1545 UB:     91.2965 EN:   123500 LN:    2627 PT:   1070s
+mod500: LB:      91.1673 UB:     91.2965 EN:   124000 LN:    2391 PT:   1073s
+mod500: LB:      91.1819 UB:     91.2965 EN:   124500 LN:    2155 PT:   1075s
+mod500: LB:      91.1953 UB:     91.2965 EN:   125000 LN:    1912 PT:   1077s
+	Find better upperbound: 91.210141. Current lowerbound: 91.207278
+mod500: LB:      91.2084 UB:     91.2101 EN:   125500 LN:      29 PT:   1080s
+
+-------------------------------------------------------------------------
+Solve LPCC by Branch and cut.
+Preprocessing time: 60.588358
+Solving time: 1079.841525
+Total time: 1140.429883
+Preprocessing time (wall): 53
+Solving time (wall): 1081
+Total time (wall): 1134
+Total solved node: 125560
+-------------------------------------------------------------------------
+LP relaxation: 33.681226
+Improved lower bound:33.681226
+LPCC is feasible and bounded
+Optimal value: 91.210141
+Save solution to file sizes120_90e_lpcc.txt.out

@@ -1,0 +1,75 @@
+sizes100_75a_MIPout.txt:        Nodes                                         Cuts/
+sizes100_75a_MIPout.txt:      0     0       20.4021    61      131.5961       Cuts: 3      753   84.50%
+sizes100_75a_MIPout.txt:Mixed integer rounding cuts applied:  3
+sizes100_75a_MIPout.txt:Lift and project cuts applied:  2
+sizes100_75a_MIPout.txt:Gomory fractional cuts applied:  5
+sizes100_75b_MIPout.txt:        Nodes                                         Cuts/
+sizes100_75b_MIPout.txt:Mixed integer rounding cuts applied:  1
+sizes100_75b_MIPout.txt:Gomory fractional cuts applied:  22
+sizes100_75c_MIPout.txt:        Nodes                                         Cuts/
+sizes100_75c_MIPout.txt:      0     0       31.2625    49      181.0370       Cuts: 4      749   82.73%
+sizes100_75c_MIPout.txt:Implied bound cuts applied:  1
+sizes100_75c_MIPout.txt:Gomory fractional cuts applied:  11
+sizes100_75d_MIPout.txt:        Nodes                                         Cuts/
+sizes100_75d_MIPout.txt:      0     0       24.3803    58      199.8867       Cuts: 6      738   87.80%
+sizes100_75d_MIPout.txt:Gomory fractional cuts applied:  19
+sizes100_75e_MIPout.txt:        Nodes                                         Cuts/
+sizes100_75e_MIPout.txt:Mixed integer rounding cuts applied:  1
+sizes100_75e_MIPout.txt:Gomory fractional cuts applied:  11
+sizes120_90a_MIPout.txt:        Nodes                                         Cuts/
+sizes120_90a_MIPout.txt:Mixed integer rounding cuts applied:  7
+sizes120_90a_MIPout.txt:Gomory fractional cuts applied:  9
+sizes120_90b_MIPout.txt:        Nodes                                         Cuts/
+sizes120_90b_MIPout.txt:Mixed integer rounding cuts applied:  2
+sizes120_90b_MIPout.txt:Gomory fractional cuts applied:  14
+sizes120_90c_MIPout.txt:        Nodes                                         Cuts/
+sizes120_90c_MIPout.txt:Mixed integer rounding cuts applied:  5
+sizes120_90c_MIPout.txt:Gomory fractional cuts applied:  7
+sizes120_90d_MIPout.txt:        Nodes                                         Cuts/
+sizes120_90d_MIPout.txt:Gomory fractional cuts applied:  16
+sizes120_90e_MIPout.txt:        Nodes                                         Cuts/
+sizes120_90e_MIPout.txt:Mixed integer rounding cuts applied:  8
+sizes120_90e_MIPout.txt:Gomory fractional cuts applied:  11
+sizes150_20a_MIPout.txt:        Nodes                                         Cuts/
+sizes150_20a_MIPout.txt:Gomory fractional cuts applied:  5
+sizes150_20b_MIPout.txt:        Nodes                                         Cuts/
+sizes150_20b_MIPout.txt:Gomory fractional cuts applied:  7
+sizes150_20c_MIPout.txt:        Nodes                                         Cuts/
+sizes150_20c_MIPout.txt:Gomory fractional cuts applied:  4
+sizes150_20d_MIPout.txt:        Nodes                                         Cuts/
+sizes150_20d_MIPout.txt:Gomory fractional cuts applied:  6
+sizes150_20e_MIPout.txt:        Nodes                                         Cuts/
+sizes150_20e_MIPout.txt:      0     0        6.1752    18      373.0670       Cuts: 9      547   98.34%
+sizes150_20e_MIPout.txt:Gomory fractional cuts applied:  1
+sizes200_15a_MIPout.txt:        Nodes                                         Cuts/
+sizes200_15a_MIPout.txt:      0     0        7.6239    15      435.6774       Cuts: 7      700   98.25%
+sizes200_15a_MIPout.txt:Gomory fractional cuts applied:  7
+sizes200_15b_MIPout.txt:        Nodes                                         Cuts/
+sizes200_15b_MIPout.txt:Gomory fractional cuts applied:  1
+sizes200_15c_MIPout.txt:        Nodes                                         Cuts/
+sizes200_15c_MIPout.txt:      0     0        8.0606    15      357.2809       Cuts: 5      615   97.74%
+sizes200_15c_MIPout.txt:Gomory fractional cuts applied:  4
+sizes200_15d_MIPout.txt:        Nodes                                         Cuts/
+sizes200_15d_MIPout.txt:      0     0        9.0575    14      284.8501       Cuts: 8      576   96.82%
+sizes200_15d_MIPout.txt:Lift and project cuts applied:  1
+sizes200_15d_MIPout.txt:Gomory fractional cuts applied:  7
+sizes200_15e_MIPout.txt:        Nodes                                         Cuts/
+sizes200_15e_MIPout.txt:Gomory fractional cuts applied:  5
+sizes400_5a_MIPout.txt:        Nodes                                         Cuts/
+sizes400_5a_MIPout.txt:      0     0       12.6822     9      105.3495       Cuts: 7      994   87.96%
+sizes400_5a_MIPout.txt:      0     0       12.6822     9       44.0009      Cuts: 12     1070   71.18%
+sizes400_5a_MIPout.txt:      0     0       12.6822     9       44.0009    MIRcuts: 2     1072   71.18%
+sizes400_5a_MIPout.txt:Gomory fractional cuts applied:  7
+sizes400_5b_MIPout.txt:        Nodes                                         Cuts/
+sizes400_5b_MIPout.txt:      0     0        7.4412     9       87.5150       Cuts: 7      969   91.50%
+sizes400_5b_MIPout.txt:      0     0        7.4412     8       71.5989       Cuts: 7     1024   89.61%
+sizes400_5b_MIPout.txt:Gomory fractional cuts applied:  17
+sizes400_5c_MIPout.txt:        Nodes                                         Cuts/
+sizes400_5c_MIPout.txt:      0     0        8.6951     8       40.6985       Cuts: 7     1038   78.64%
+sizes400_5c_MIPout.txt:Gomory fractional cuts applied:  21
+sizes400_5d_MIPout.txt:        Nodes                                         Cuts/
+sizes400_5d_MIPout.txt:      0     0        6.7588     9       90.6385      Cuts: 11      961   92.54%
+sizes400_5d_MIPout.txt:      0     0        6.7588    10       68.2209       Cuts: 7      999   90.09%
+sizes400_5d_MIPout.txt:Gomory fractional cuts applied:  20
+sizes400_5e_MIPout.txt:        Nodes                                         Cuts/
+sizes400_5e_MIPout.txt:Gomory fractional cuts applied:  5

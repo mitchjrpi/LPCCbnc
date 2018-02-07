@@ -1,0 +1,197 @@
+Reading inputdata...
+Setup LPCC problem...
+Start solving...
+Preprocessing...
+ LPCC relaxation: 7.623856
+ Feasibility recovery...
+	Find a feasible solution with objective:64.101367 by directly rounding
+	Feasibility recovery refinement...
+		Search range  7.623856 - 35.862612
+		Search range  35.862612 - 49.981990
+		Search range  49.981990 - 57.041679
+		Search range  57.041679 - 60.571523
+		Search range  60.571523 - 62.336445
+	Find a feasible solution with objective:59.820096
+	Final find the best ub: 59.820096
+	Total feasibility recovery time:        1.236
+ Add disjunctive cut at root node...(loop=20)
+	Total time for generating cuts:        0.999s
+	After adding 0 disjunctive cuts, improved lp relaxation is 7.623856
+ Add simple cuts at root node...(loop=20)
+	Total time for generating cuts:        0.001
+	After adding 0 simple cuts, improved lp relaxation is 7.623856
+ Add bound cut at root node...(p=1, loop=3)
+	Total time for generating cuts:        0.000
+	After adding 0 bound cuts, improved lp relaxation is 0.000000
+ Initial subproblem generated: 1
+ terminating status in preprocess 0
+ Total preprocessing time: 2.244501
+ Total preprocessing wall clock time: 1
+mod500: LB:       7.6239 UB:     59.8201 EN:        0 LN:       0 PT:      0s
+mod500: LB:       8.7390 UB:     59.8201 EN:      500 LN:     250 PT:      1s
+mod500: LB:       9.0166 UB:     59.8201 EN:     1000 LN:     500 PT:      2s
+mod500: LB:       9.2866 UB:     59.8201 EN:     1500 LN:     750 PT:      4s
+mod500: LB:       9.4678 UB:     59.8201 EN:     2000 LN:    1000 PT:      5s
+mod500: LB:       9.5817 UB:     59.8201 EN:     2500 LN:    1250 PT:      6s
+mod500: LB:       9.6420 UB:     59.8201 EN:     3000 LN:    1500 PT:      7s
+mod500: LB:       9.7714 UB:     59.8201 EN:     3500 LN:    1750 PT:      8s
+mod500: LB:       9.8570 UB:     59.8201 EN:     4000 LN:    2000 PT:      9s
+mod500: LB:       9.9695 UB:     59.8201 EN:     4500 LN:    2250 PT:     10s
+mod500: LB:      10.0127 UB:     59.8201 EN:     5000 LN:    2500 PT:     11s
+mod500: LB:      10.0371 UB:     59.8201 EN:     5500 LN:    2750 PT:     12s
+mod500: LB:      10.1105 UB:     59.8201 EN:     6000 LN:    3000 PT:     14s
+mod500: LB:      10.1647 UB:     59.8201 EN:     6500 LN:    3250 PT:     15s
+mod500: LB:      10.2280 UB:     59.8201 EN:     7000 LN:    3500 PT:     16s
+mod500: LB:      10.2670 UB:     59.8201 EN:     7500 LN:    3750 PT:     17s
+mod500: LB:      10.3022 UB:     59.8201 EN:     8000 LN:    4000 PT:     18s
+mod500: LB:      10.3254 UB:     59.8201 EN:     8500 LN:    4250 PT:     19s
+mod500: LB:      10.3575 UB:     59.8201 EN:     9000 LN:    4500 PT:     20s
+mod500: LB:      10.4006 UB:     59.8201 EN:     9500 LN:    4750 PT:     21s
+mod500: LB:      10.4298 UB:     59.8201 EN:    10000 LN:    5000 PT:     22s
+mod500: LB:      10.4604 UB:     59.8201 EN:    10500 LN:    5250 PT:     24s
+mod500: LB:      10.4772 UB:     59.8201 EN:    11000 LN:    5500 PT:     25s
+mod500: LB:      10.4936 UB:     59.8201 EN:    11500 LN:    5750 PT:     26s
+mod500: LB:      10.5340 UB:     59.8201 EN:    12000 LN:    6000 PT:     27s
+mod500: LB:      10.5531 UB:     59.8201 EN:    12500 LN:    6250 PT:     28s
+mod500: LB:      10.5608 UB:     59.8201 EN:    13000 LN:    6500 PT:     29s
+mod500: LB:      10.5837 UB:     59.8201 EN:    13500 LN:    6750 PT:     30s
+mod500: LB:      10.6190 UB:     59.8201 EN:    14000 LN:    7000 PT:     31s
+mod500: LB:      10.6324 UB:     59.8201 EN:    14500 LN:    7250 PT:     32s
+mod500: LB:      10.6476 UB:     59.8201 EN:    15000 LN:    7500 PT:     33s
+mod500: LB:      10.6696 UB:     59.8201 EN:    15500 LN:    7750 PT:     34s
+mod500: LB:      10.6847 UB:     59.8201 EN:    16000 LN:    8000 PT:     35s
+mod500: LB:      10.7054 UB:     59.8201 EN:    16500 LN:    8250 PT:     37s
+mod500: LB:      10.7216 UB:     59.8201 EN:    17000 LN:    8500 PT:     38s
+mod500: LB:      10.7492 UB:     59.8201 EN:    17500 LN:    8750 PT:     39s
+mod500: LB:      10.7641 UB:     59.8201 EN:    18000 LN:    9000 PT:     40s
+mod500: LB:      10.7805 UB:     59.8201 EN:    18500 LN:    9250 PT:     41s
+mod500: LB:      10.7958 UB:     59.8201 EN:    19000 LN:    9500 PT:     42s
+mod500: LB:      10.8088 UB:     59.8201 EN:    19500 LN:    9750 PT:     43s
+mod500: LB:      10.8209 UB:     59.8201 EN:    20000 LN:   10000 PT:     44s
+mod500: LB:      10.8370 UB:     59.8201 EN:    20500 LN:   10250 PT:     45s
+mod500: LB:      10.8513 UB:     59.8201 EN:    21000 LN:   10500 PT:     47s
+mod500: LB:      10.8668 UB:     59.8201 EN:    21500 LN:   10750 PT:     48s
+mod500: LB:      10.8770 UB:     59.8201 EN:    22000 LN:   11000 PT:     49s
+mod500: LB:      10.8827 UB:     59.8201 EN:    22500 LN:   11250 PT:     50s
+mod500: LB:      10.8890 UB:     59.8201 EN:    23000 LN:   11500 PT:     51s
+mod500: LB:      10.9000 UB:     59.8201 EN:    23500 LN:   11750 PT:     52s
+mod500: LB:      10.9089 UB:     59.8201 EN:    24000 LN:   12000 PT:     53s
+mod500: LB:      10.9245 UB:     59.8201 EN:    24500 LN:   12250 PT:     54s
+mod500: LB:      10.9428 UB:     59.8201 EN:    25000 LN:   12500 PT:     55s
+mod500: LB:      10.9455 UB:     59.8201 EN:    25500 LN:   12750 PT:     56s
+mod500: LB:      10.9546 UB:     59.8201 EN:    26000 LN:   13000 PT:     57s
+mod500: LB:      10.9600 UB:     59.8201 EN:    26500 LN:   13250 PT:     58s
+mod500: LB:      10.9801 UB:     59.8201 EN:    27000 LN:   13500 PT:     60s
+mod500: LB:      10.9885 UB:     59.8201 EN:    27500 LN:   13750 PT:     61s
+mod500: LB:      10.9967 UB:     59.8201 EN:    28000 LN:   14000 PT:     62s
+mod500: LB:      11.0087 UB:     59.8201 EN:    28500 LN:   14250 PT:     63s
+mod500: LB:      11.0197 UB:     59.8201 EN:    29000 LN:   14500 PT:     64s
+mod500: LB:      11.0327 UB:     59.8201 EN:    29500 LN:   14750 PT:     65s
+mod500: LB:      11.0424 UB:     59.8201 EN:    30000 LN:   15000 PT:     66s
+mod500: LB:      11.0575 UB:     59.8201 EN:    30500 LN:   15250 PT:     67s
+mod500: LB:      11.0623 UB:     59.8201 EN:    31000 LN:   15500 PT:     69s
+mod500: LB:      11.0756 UB:     59.8201 EN:    31500 LN:   15750 PT:     70s
+mod500: LB:      11.0812 UB:     59.8201 EN:    32000 LN:   16000 PT:     71s
+mod500: LB:      11.0939 UB:     59.8201 EN:    32500 LN:   16250 PT:     72s
+mod500: LB:      11.1020 UB:     59.8201 EN:    33000 LN:   16500 PT:     73s
+mod500: LB:      11.1087 UB:     59.8201 EN:    33500 LN:   16750 PT:     74s
+mod500: LB:      11.1148 UB:     59.8201 EN:    34000 LN:   17000 PT:     75s
+mod500: LB:      11.1308 UB:     59.8201 EN:    34500 LN:   17250 PT:     76s
+mod500: LB:      11.1360 UB:     59.8201 EN:    35000 LN:   17500 PT:     77s
+mod500: LB:      11.1429 UB:     59.8201 EN:    35500 LN:   17750 PT:     78s
+mod500: LB:      11.1526 UB:     59.8201 EN:    36000 LN:   18000 PT:     80s
+mod500: LB:      11.1607 UB:     59.8201 EN:    36500 LN:   18250 PT:     81s
+mod500: LB:      11.1681 UB:     59.8201 EN:    37000 LN:   18500 PT:     82s
+mod500: LB:      11.1720 UB:     59.8201 EN:    37500 LN:   18750 PT:     83s
+mod500: LB:      11.1786 UB:     59.8201 EN:    38000 LN:   19000 PT:     84s
+mod500: LB:      11.1874 UB:     59.8201 EN:    38500 LN:   19250 PT:     85s
+mod500: LB:      11.1928 UB:     59.8201 EN:    39000 LN:   19500 PT:     86s
+mod500: LB:      11.2045 UB:     59.8201 EN:    39500 LN:   19750 PT:     87s
+mod500: LB:      11.2116 UB:     59.8201 EN:    40000 LN:   20000 PT:     89s
+mod500: LB:      11.2167 UB:     59.8201 EN:    40500 LN:   20250 PT:     90s
+mod500: LB:      11.2209 UB:     59.8201 EN:    41000 LN:   20500 PT:     91s
+mod500: LB:      11.2323 UB:     59.8201 EN:    41500 LN:   20750 PT:     92s
+mod500: LB:      11.2380 UB:     59.8201 EN:    42000 LN:   21000 PT:     93s
+mod500: LB:      11.2425 UB:     59.8201 EN:    42500 LN:   21250 PT:     94s
+mod500: LB:      11.2487 UB:     59.8201 EN:    43000 LN:   21500 PT:     95s
+mod500: LB:      11.2521 UB:     59.8201 EN:    43500 LN:   21750 PT:     96s
+mod500: LB:      11.2611 UB:     59.8201 EN:    44000 LN:   22000 PT:     97s
+mod500: LB:      11.2659 UB:     59.8201 EN:    44500 LN:   22250 PT:     98s
+mod500: LB:      11.2746 UB:     59.8201 EN:    45000 LN:   22500 PT:     99s
+mod500: LB:      11.2784 UB:     59.8201 EN:    45500 LN:   22750 PT:    100s
+mod500: LB:      11.2854 UB:     59.8201 EN:    46000 LN:   23000 PT:    101s
+mod500: LB:      11.2938 UB:     59.8201 EN:    46500 LN:   23250 PT:    103s
+mod500: LB:      11.2979 UB:     59.8201 EN:    47000 LN:   23500 PT:    104s
+mod500: LB:      11.3041 UB:     59.8201 EN:    47500 LN:   23750 PT:    105s
+mod500: LB:      11.3056 UB:     59.8201 EN:    48000 LN:   24000 PT:    106s
+mod500: LB:      11.3090 UB:     59.8201 EN:    48500 LN:   24250 PT:    107s
+mod500: LB:      11.3140 UB:     59.8201 EN:    49000 LN:   24500 PT:    108s
+mod500: LB:      11.3208 UB:     59.8201 EN:    49500 LN:   24750 PT:    109s
+mod500: LB:      11.3256 UB:     59.8201 EN:    50000 LN:   25000 PT:    110s
+mod500: LB:      11.3306 UB:     59.8201 EN:    50500 LN:   25250 PT:    112s
+mod500: LB:      11.3341 UB:     59.8201 EN:    51000 LN:   25500 PT:    113s
+	Find better upperbound: 18.013174. Current lowerbound: 11.334225
+	Find better upperbound: 17.036331. Current lowerbound: 11.334225
+	Find better upperbound: 11.982597. Current lowerbound: 11.334225
+	Find better upperbound: 11.668287. Current lowerbound: 11.334225
+mod500: LB:      11.3382 UB:     11.6683 EN:    51500 LN:    1223 PT:    114s
+mod500: LB:      11.3424 UB:     11.6683 EN:    52000 LN:    1215 PT:    115s
+mod500: LB:      11.3463 UB:     11.6683 EN:    52500 LN:    1212 PT:    116s
+mod500: LB:      11.3489 UB:     11.6683 EN:    53000 LN:    1208 PT:    117s
+mod500: LB:      11.3552 UB:     11.6683 EN:    53500 LN:    1206 PT:    118s
+mod500: LB:      11.3584 UB:     11.6683 EN:    54000 LN:    1206 PT:    118s
+mod500: LB:      11.3650 UB:     11.6683 EN:    54500 LN:    1198 PT:    119s
+mod500: LB:      11.3672 UB:     11.6683 EN:    55000 LN:    1195 PT:    120s
+	Find better upperbound: 11.603601. Current lowerbound: 11.370060
+mod500: LB:      11.3710 UB:     11.6036 EN:    55500 LN:     912 PT:    121s
+mod500: LB:      11.3759 UB:     11.6036 EN:    56000 LN:     900 PT:    122s
+mod500: LB:      11.3798 UB:     11.6036 EN:    56500 LN:     888 PT:    123s
+mod500: LB:      11.3844 UB:     11.6036 EN:    57000 LN:     870 PT:    124s
+mod500: LB:      11.3891 UB:     11.6036 EN:    57500 LN:     862 PT:    125s
+mod500: LB:      11.3944 UB:     11.6036 EN:    58000 LN:     852 PT:    126s
+mod500: LB:      11.3996 UB:     11.6036 EN:    58500 LN:     838 PT:    127s
+mod500: LB:      11.4051 UB:     11.6036 EN:    59000 LN:     828 PT:    127s
+mod500: LB:      11.4109 UB:     11.6036 EN:    59500 LN:     814 PT:    128s
+mod500: LB:      11.4159 UB:     11.6036 EN:    60000 LN:     799 PT:    129s
+mod500: LB:      11.4206 UB:     11.6036 EN:    60500 LN:     788 PT:    130s
+mod500: LB:      11.4258 UB:     11.6036 EN:    61000 LN:     772 PT:    131s
+mod500: LB:      11.4280 UB:     11.6036 EN:    61500 LN:     759 PT:    132s
+mod500: LB:      11.4322 UB:     11.6036 EN:    62000 LN:     746 PT:    133s
+mod500: LB:      11.4384 UB:     11.6036 EN:    62500 LN:     729 PT:    134s
+mod500: LB:      11.4422 UB:     11.6036 EN:    63000 LN:     718 PT:    135s
+mod500: LB:      11.4470 UB:     11.6036 EN:    63500 LN:     709 PT:    135s
+mod500: LB:      11.4509 UB:     11.6036 EN:    64000 LN:     693 PT:    136s
+mod500: LB:      11.4536 UB:     11.6036 EN:    64500 LN:     682 PT:    137s
+mod500: LB:      11.4573 UB:     11.6036 EN:    65000 LN:     672 PT:    138s
+mod500: LB:      11.4620 UB:     11.6036 EN:    65500 LN:     661 PT:    139s
+	Find better upperbound: 11.507770. Current lowerbound: 11.463533
+mod500: LB:      11.4662 UB:     11.5078 EN:    66000 LN:     192 PT:    140s
+mod500: LB:      11.4696 UB:     11.5078 EN:    66500 LN:     176 PT:    141s
+mod500: LB:      11.4754 UB:     11.5078 EN:    67000 LN:     147 PT:    142s
+mod500: LB:      11.4771 UB:     11.5078 EN:    67500 LN:     144 PT:    143s
+mod500: LB:      11.4805 UB:     11.5078 EN:    68000 LN:     132 PT:    144s
+mod500: LB:      11.4837 UB:     11.5078 EN:    68500 LN:     114 PT:    144s
+mod500: LB:      11.4845 UB:     11.5078 EN:    69000 LN:     107 PT:    145s
+mod500: LB:      11.4876 UB:     11.5078 EN:    69500 LN:      91 PT:    146s
+mod500: LB:      11.4919 UB:     11.5078 EN:    70000 LN:      74 PT:    147s
+mod500: LB:      11.4938 UB:     11.5078 EN:    70500 LN:      65 PT:    148s
+mod500: LB:      11.4974 UB:     11.5078 EN:    71000 LN:      50 PT:    149s
+mod500: LB:      11.4991 UB:     11.5078 EN:    71500 LN:      40 PT:    150s
+mod500: LB:      11.5011 UB:     11.5078 EN:    72000 LN:      28 PT:    150s
+mod500: LB:      11.5046 UB:     11.5078 EN:    72500 LN:      13 PT:    151s
+
+-------------------------------------------------------------------------
+Solve LPCC by Branch and cut.
+Preprocessing time: 2.244501
+Solving time: 151.865953
+Total time: 154.110454
+Preprocessing time (wall): 1
+Solving time (wall): 152
+Total time (wall): 153
+Total solved node: 72840
+-------------------------------------------------------------------------
+LP relaxation: 7.623856
+Improved lower bound:7.623856
+LPCC is feasible and bounded
+Optimal value: 11.507770
+Save solution to file lpcc.txt.out

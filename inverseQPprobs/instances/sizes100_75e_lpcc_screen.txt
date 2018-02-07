@@ -1,0 +1,68 @@
+Reading inputdata...
+Setup LPCC problem...
+Start solving...
+Preprocessing...
+ LPCC relaxation: 29.318092
+ Feasibility recovery...
+	Find a feasible solution with objective:88.310316 by directly rounding
+	Feasibility recovery refinement...
+		Search range  29.318092 - 58.814204
+		Search range  58.814204 - 73.562260
+	Find a feasible solution with objective:69.474771
+		Search range  58.814204 - 64.144488
+	Find a feasible solution with objective:63.948149
+		Search range  58.814204 - 61.381177
+		Search range  61.381177 - 62.664663
+	Find a feasible solution with objective:62.648767
+		Search range  61.381177 - 62.014972
+	Find a feasible solution with objective:61.892921
+	Final find the best ub: 61.892921
+	Total feasibility recovery time:       19.150
+ Add disjunctive cut at root node...(loop=10)
+	Total time for generating cuts:        6.514s
+	After adding 0 disjunctive cuts, improved lp relaxation is 29.318092
+ Add simple cuts at root node...(loop=10)
+	Total time for generating cuts:        0.001
+	After adding 0 simple cuts, improved lp relaxation is 29.318092
+ Add bound cut at root node...(p=1, loop=3)
+	Total time for generating cuts:        0.000
+	After adding 0 bound cuts, improved lp relaxation is 0.000000
+ Initial subproblem generated: 1
+ terminating status in preprocess 0
+ Total preprocessing time: 25.687458
+ Total preprocessing wall clock time: 21
+mod500: LB:      29.3181 UB:     61.8929 EN:        0 LN:       0 PT:      0s
+mod500: LB:      51.7969 UB:     61.8929 EN:      500 LN:     239 PT:     19s
+mod500: LB:      54.1760 UB:     61.8929 EN:     1000 LN:     443 PT:     27s
+mod500: LB:      55.7383 UB:     61.8929 EN:     1500 LN:     610 PT:     31s
+mod500: LB:      56.7197 UB:     61.8929 EN:     2000 LN:     724 PT:     34s
+mod500: LB:      57.5516 UB:     61.8929 EN:     2500 LN:     818 PT:     38s
+mod500: LB:      58.1192 UB:     61.8929 EN:     3000 LN:     883 PT:     41s
+mod500: LB:      58.6845 UB:     61.8929 EN:     3500 LN:     936 PT:     44s
+mod500: LB:      59.1372 UB:     61.8929 EN:     4000 LN:     976 PT:     47s
+mod500: LB:      59.5338 UB:     61.8929 EN:     4500 LN:     999 PT:     50s
+mod500: LB:      59.8886 UB:     61.8929 EN:     5000 LN:    1003 PT:     52s
+mod500: LB:      60.1931 UB:     61.8929 EN:     5500 LN:    1000 PT:     55s
+mod500: LB:      60.4837 UB:     61.8929 EN:     6000 LN:     956 PT:     58s
+mod500: LB:      60.7398 UB:     61.8929 EN:     6500 LN:     903 PT:     60s
+mod500: LB:      60.9693 UB:     61.8929 EN:     7000 LN:     835 PT:     62s
+mod500: LB:      61.1744 UB:     61.8929 EN:     7500 LN:     747 PT:     64s
+mod500: LB:      61.3765 UB:     61.8929 EN:     8000 LN:     622 PT:     66s
+mod500: LB:      61.5537 UB:     61.8929 EN:     8500 LN:     458 PT:     68s
+	Find better upperbound: 61.657351. Current lowerbound: 61.646281
+
+-------------------------------------------------------------------------
+Solve LPCC by Branch and cut.
+Preprocessing time: 25.687458
+Solving time: 69.227479
+Total time: 94.914937
+Preprocessing time (wall): 21
+Solving time (wall): 69
+Total time (wall): 90
+Total solved node: 8810
+-------------------------------------------------------------------------
+LP relaxation: 29.318092
+Improved lower bound:29.318092
+LPCC is feasible and bounded
+Optimal value: 61.657351
+Save solution to file lpcc.txt.out
