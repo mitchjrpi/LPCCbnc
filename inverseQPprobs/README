@@ -1,0 +1,23 @@
+Instances of inverse QP problems are modeled as LPCCs, as in
+F. Jara-Moroni, J. S. Pang and A. Waechter, "A study of the
+difference-of-convex approach for solving linear programs with
+complementarity constraints", Mathematical Programming 2017.
+
+The problems are set up using AMPL.
+The AMPL run file generateinvQP.run generates random instances
+using the parameters in sizes.mod and generateinvQP.dat, with
+the model file in generateinvQP.mod.
+The problem is written out to lpcc.txt in a format for the lpcc code.
+The problem can also be solved as an integer program by entering
+the ampl command
+>solve MIP;
+
+The set of instances in the subfolder were generated and solved
+using the unix executable  solve_instances.txt.
+
+The solver LPCCnpc is the LPCC code compiled so as to not
+generate any cuts in the preprocessor; this requires editing
+cutsgenerator.c.
+
+The modified versions of cutsgenerator.c and cutsgenerator.h
+can be found in this folder.
